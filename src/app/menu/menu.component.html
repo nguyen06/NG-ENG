@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" layout="row" style="position: fixed; height:100px">
+  <i class="fa fa-tasks fa-lg" aria-hidden="true" [matMenuTriggerFor]="menu"> Menu</i>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Check voicemail</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+        </button>
+      </mat-menu>
+   
+    <i class="fa fa-user fa-lg pull-right" aria-hidden="true"></i>
+</mat-toolbar>
