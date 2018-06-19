@@ -1,29 +1,54 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatMenuModule } from '@angular/material/menu';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  RouterModule,
+  Routes
+} from '@angular/router';
+
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import {MatIconModule} from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { TenseService } from './services/tense.service';
+
+
+import { MDBBootstrapModule } from './../../angular-bootstrap-md';
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { WritingComponent } from './writing/writing.component';
+import { ReadingComponent } from './reading/reading.component';
+import { HomeComponent } from './home/home.component';
+import { EGrammarComponent } from './e-grammar/e-grammar.component';
+
+import {
+  routes as childRoutes,
+  tenses
+} from './tense-details/tense-details.module';
+import { TenseDetailsComponent } from './tense-details/tense-details.component';
+import { APP_BASE_HREF } from '@angular/common';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    WritingComponent,
+    HeaderComponent,
+    ReadingComponent,
+    HomeComponent,
+    EGrammarComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCheckboxModule,
-    MatMenuModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatSidenavModule
+    MDBBootstrapModule.forRoot(),
+    FormsModule,
+    AppRoutingModule,
+    tenses
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {provide: APP_BASE_HREF, useValue:'/'},
+    TenseService
+  ],
+  bootstrap: [AppComponent],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }
