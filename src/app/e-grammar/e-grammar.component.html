@@ -1,0 +1,93 @@
+<div class="container" >
+        <div class="btn-group pt-4 ml-15">
+            <button class="btn btn-primary btn-lg dropdown-toggle" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    mdbWavesEffect
+                    >
+                {{selectTense}}
+            </button>
+            <div class="dropdown-menu dropdown dropdown-info" >
+                <a class="dropdown-item" (click)="selectTenses('Present')">Present</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" (click)="selectTenses('Past')">Past</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" (click)="selectTenses('Future')">Future</a>
+            </div>
+        </div>
+        <div *ngIf="flag1==true" class="btn-group pt-4">
+            <button class="btn btn-primary btn-lg dropdown-toggle" 
+                    type="button" 
+                    data-toggle="dropdown" 
+                    aria-haspopup="true" 
+                    aria-expanded="false">
+               {{selectForm}}
+            </button>
+            <div class="dropdown-menu dropdown dropdown-info">
+                <a class="dropdown-item" (click)="selectForms('Simple')">Simple</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" (click)="selectForms('Progressive')"> Progressive</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" (click)="selectForms('Perfect')">Perfect</a>
+            </div>
+            
+        </div>
+        <div *ngIf="flag3 === true" >
+            <h2 class="h1-responsive font-weight-bold my-4">{{tenseData.name}}</h2>
+        </div>
+        <div *ngIf="flag4=='start'">
+            <div *ngFor="let question of quest">
+                <button class="btn blue-gradient btn-rounded btn-sm">
+                    Question {{page.index + 1}} of {{page.count}}
+                </button>
+                <div class="pat-3">
+                    <p class="lead font-weight-bold w-responsive mx-auto left">{{page.index + 1}}. <span [innerHTML]="question.name"></span></p>
+                </div>
+                <div class="pt-3">
+                    <div  *ngFor="let option of question.options">
+                        <div class="input-group" >
+                                <div class="input-group-prepend text-center">
+                                    <div class="input-group-text" 
+                                         id="btnGroupAddon"
+                                         [ngStyle]="{'background-color':id === option.id ? '#ffbb33' : 'white'}">
+                                         {{option.id}}
+                                    </div>
+                                </div>
+                                <div   
+                                       [ngStyle]="{'background-color':id === option.id ? '#33b5e5' : 'white'}"
+                                       class="form-control text-left" 
+                                       id={{option.id}} 
+                                       (click)="onSelect(option);"
+                                       aria-label="Input group example" 
+                                       aria-describedby="btnGroupAddon"
+                                       
+                                >
+                                {{option.name}}
+                                <div *ngIf="confirm === true && id === option.id">
+                                    <button type="button" class="btn primary-color-dark waves-light" (click)="checkAns(question, option)"mdbWavesEffect>Confirm</button>
+                                </div>
+                                <div *ngIf="isAns === true && id === option.id">
+                                    {{correct}}
+                                </div>
+                                </div>
+                                <br>
+                                
+                        </div>
+                        <br> 
+                    </div>
+                </div>
+                <br> 
+                <br>
+                <footer class="footer-copyright fixed-bottom blue py-3 text-center text-white">
+                    <i class="fa fa-fast-backward pr-5 fa-lg" (click)="goto(tenseData,0)"></i>
+                    <i class="fa fa-backward pr-5 fa-lg" (click)="goto(tenseData,page.index -1)"></i>
+                    <i class="fa fa-forward pr-5 fa-lg" (click)="goto(tenseData,page.index + 1)"></i>
+                    <i class="fa fa-fast-forward fa-lg" (click)="goto(tenseData,page.count-1)"></i>
+                  </footer>
+        </div>       
+</div>
+
+    
+    

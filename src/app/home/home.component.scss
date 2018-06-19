@@ -1,0 +1,19 @@
+.pt-30, .py-30 {
+    padding-top: 40rem !important;
+}
+.view {
+    background: url("https://cdn.pixabay.com/photo/2015/05/05/17/56/vancouver-754204_960_720.jpg")no-repeat center center;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+.text-small {
+    font-size: 0.75rem;
+}

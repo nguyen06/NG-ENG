@@ -1,0 +1,100 @@
+.pt-4{
+    padding-top: 9rem !important;
+}
+.container{
+    text-align: center;
+}
+.ml-15{
+    padding-right: 15px;
+}
+.pt-50{
+    padding-top:20rem;
+}
+.btn-rounded{
+    border-radius: 15px;
+}
+.text-justify {
+    border: 2px;
+}
+.blue-gradient{
+    color: #514A9D;
+}
+.pat-3{
+    padding-top: 10px;;
+    
+}
+.left{
+    text-align: left;
+}
+.btn-size{
+    padding: 15px 32px;
+    margin-bottom: 10px;
+}
+.column{
+    float: left;
+    width: 50%;
+}
+.pl-5{
+    float: left;
+    width: 70%;
+}
+
+
+.btn.btn-lg {
+    padding: 1rem 2.0rem;
+    font-size: 0.94rem;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 320px) { 
+    .navbar {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0.5rem;
+    }
+    .input-group {
+        width: 100%;
+        margin: auto;
+    }
+    .btn.btn-lg {
+        padding: 1rem 1.0rem;
+        font-size: 0.94rem;
+    }
+    .pt-4[_ngcontent-c2] {
+        padding-top: 6rem !important;
+    }
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        width: 70%;
+        margin: auto;
+    }
+    .pt-4[_ngcontent-c2] {
+        padding-top: 9rem !important;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        width: 70%;
+        margin: auto;
+    }
+    .pt-4[_ngcontent-c2] {
+        padding-top: 9rem !important;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
