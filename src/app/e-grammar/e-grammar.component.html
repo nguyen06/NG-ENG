@@ -17,7 +17,7 @@
                 <a class="dropdown-item" (click)="selectTenses('Future')">Future</a>
             </div>
         </div>
-        <div *ngIf="flag1==true" class="btn-group pt-4">
+        <div class="btn-group pt-4">
             <button class="btn btn-primary btn-lg dropdown-toggle" 
                     type="button" 
                     data-toggle="dropdown" 
@@ -34,7 +34,12 @@
             </div>
             
         </div>
-        <div *ngIf="flag3 === true" >
+        <div *ngIf="goto === true">
+            <app-tense-detail [tenName]="tenseName"></app-tense-detail>
+        </div>
+        
+</div>
+        <!-- <div *ngIf="flag3 === true" >
             <h2 class="h1-responsive font-weight-bold my-4">{{tenseData.name}}</h2>
         </div>
         <div *ngIf="flag4=='start'">
@@ -51,7 +56,7 @@
                                 <div class="input-group-prepend text-center">
                                     <div class="input-group-text" 
                                          id="btnGroupAddon"
-                                         [ngStyle]="{'background-color':id === option.id ? '#ffbb33' : 'white'}">
+                                         [ngStyle]="{'background-color':id === option.id  ? '#ffbb33' : 'white'}">
                                          {{option.id}}
                                     </div>
                                 </div>
@@ -64,13 +69,18 @@
                                        aria-describedby="btnGroupAddon"
                                        
                                 >
-                                {{option.name}}
-                                <div *ngIf="confirm === true && id === option.id">
-                                    <button type="button" class="btn primary-color-dark waves-light" (click)="checkAns(question, option)"mdbWavesEffect>Confirm</button>
-                                </div>
-                                <div *ngIf="isAns === true && id === option.id">
-                                    {{correct}}
-                                </div>
+                                    {{option.name}}
+                                    <div *ngIf="confirm === true && id === option.id">
+                                        <button type="button" class="btn primary-color-dark waves-light" (click)="checkAns(question, option)"mdbWavesEffect>Confirm</button>
+                                    </div>
+                                    <div *ngIf="isAns === true && id === option.id">
+                                        {{correct}}
+                                    </div>
+                                    <div *ngIf="flag5 === true && id === option.id">
+                                        <p>Incorrect: read this article</p>
+                                        <div></div>
+                                       {{commend}}
+                                    </div>
                                 </div>
                                 <br>
                                 
@@ -86,8 +96,8 @@
                     <i class="fa fa-forward pr-5 fa-lg" (click)="goto(tenseData,page.index + 1)"></i>
                     <i class="fa fa-fast-forward fa-lg" (click)="goto(tenseData,page.count-1)"></i>
                   </footer>
-        </div>       
-</div>
+        </div>        -->
+
 
     
     

@@ -1,0 +1,61 @@
+<h2 class="h1-responsive font-weight-bold my-4">{{tenName}}</h2>
+<div>
+  <div *ngFor="let question of questions;">
+    <button class="btn blue-gradient btn-rounded btn-sm">
+      Question {{page.index + 1}} of {{page.num}}
+    </button>
+    <div>
+        <p class="lead font-weight-bold w-responsive mx-auto left">
+          {{page.index + 1 }}. <span>{{question.content}}</span> 
+        </p>
+    </div>
+    
+    <div  *ngFor="let option of question.options">
+      <div class="input-group" >
+        <div class="input-group-prepend text-center">
+            <div class="input-group-text">
+                  {{option.id}}
+            </div>
+        </div>
+        <div class="form-control text-left"
+            [ngStyle]="{'background-color': ansOptId === option.id ? correctColor : uncorrectColor}"
+        >
+            {{option.content}}
+            <div *ngIf="isVisited === false">
+                <button type="button" class="btn primary-color-dark btn-rounded" (click)="getAnswer(question.id,option.id)"mdbWavesEffect>Confirm</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+    <br>
+    <br>
+    <div *ngIf="correct === false">
+        <div class="alert alert-danger" role="alert">
+            <h2>WRONG </h2><p>Conider to read and do the exercises from <a href="{{hind}}">here</a></p>
+        </div>
+    </div>
+    <div *ngIf="correct === true">
+        <div class="alert alert-success" role="alert">
+            <h2>Correct </h2><p>Congratulation your answer correct, more practice is <a href="{{hind}}">here</a></p>
+        </div>
+    </div>
+    <br>
+
+    <br>
+    <br><br>
+    <footer class="footer-copyright fixed-bottom ">
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar green accent-2" role="progressbar" 
+            [ngStyle]="{'width': percent, 'height': '20px', 'color': 'black'}"
+             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">{{percent}}</div>
+        </div>
+        <div class = "blue py-3 text-center text-white">
+        <i class="fa fa-fast-backward pr-5 fa-lg" (click)="goto(0)"></i>
+        <i class="fa fa-backward pr-5 fa-lg" (click)="goto(page.index -1)"></i>
+        <i class="fa fa-forward pr-5 fa-lg" (click)="goto(page.index + 1)"></i>
+        <i class="fa fa-fast-forward fa-lg" (click)="goto(page.num-1)"></i>
+        </div>
+      </footer>
+  </div>
+
+</div>

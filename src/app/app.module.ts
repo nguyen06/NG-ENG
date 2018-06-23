@@ -18,13 +18,14 @@ import { WritingComponent } from './writing/writing.component';
 import { ReadingComponent } from './reading/reading.component';
 import { HomeComponent } from './home/home.component';
 import { EGrammarComponent } from './e-grammar/e-grammar.component';
-
+import { HttpClientModule } from '@angular/common/http';
 import {
   routes as childRoutes,
   tenses
 } from './tense-details/tense-details.module';
 import { TenseDetailsComponent } from './tense-details/tense-details.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { TenseDetailComponent } from './e-grammar/tense-detail/tense-detail.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { APP_BASE_HREF } from '@angular/common';
     ReadingComponent,
     HomeComponent,
     EGrammarComponent,
+    TenseDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,7 @@ import { APP_BASE_HREF } from '@angular/common';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     tenses
   ],
   providers: [
