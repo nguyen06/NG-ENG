@@ -1,35 +1,20 @@
 import { Injectable } from '@angular/core';
-import { tense } from '../shared/dataStructure/tense';
-import { sPresent_Q } from '../shared/s-present';
-import {question} from '../shared/dataStructure/question';
-import { pProgressive_Q} from '../shared/pProgressive';
-import { answer } from '../shared/dataStructure/ans';
-import { ANSWERS } from '../shared/s-present-Ans';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class TenseService {
 
-  question: tense[];
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getTenses(name: string): tense {
-    if(name === "Present Simple"){
-      return sPresent_Q;
-    }else if (name === "Present Progressive"){
-      return pProgressive_Q;
-    }
-
-  }
-  getQuestions(tense: tense): question[]{
-    return tense.questions;
+  get(url: string){
+    return this.http.get(url);
   }
 
-  getAns(tense: string): answer[] {
-    if(tense === "Present Simple"){
-      return ANSWERS;
-    }
+  getAll() {
+    return [
+      {name: "Present Simple", content: "assets/data/PresentSimple.json"}
+    ]
   }
-
 }
