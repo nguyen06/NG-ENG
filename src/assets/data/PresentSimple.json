@@ -1,6 +1,6 @@
 { 
     "id": 1,
-    "name": "Simple Presnt",
+    "name": "Simple Present",
     "questions": [ 
         {
             
@@ -430,7 +430,415 @@
                 }
             ]
 
-        } 
+        },
+        {
+            "id": 14, 
+            "content": "I hear you're having your house repainted. How ___ it ___?",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "does ... look/is ... looking",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "did ... look",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "is ... look",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "do ... look/ are ... looking",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 15, 
+            "content": "I bought this new adress today. How ___ it ____",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "does ... look/is ... looking",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "does ... look",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "is ... look",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "do ... look/ are ... looking",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 16, 
+            "content": "A: What are you doing with that ruler? \n B: I ___ the area of the  kitchen.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "measures",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "are ... measuring",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "am ... measuring",
+                    "isAnswer": true
+                },
+                {
+                    "id": 4,
+                    "content": "measuring",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 17, 
+            "content": "The garden ____ 12 by 20 metres",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "measures",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "are ... measuring",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "am ... measuring",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "measuring",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 18, 
+            "content": "I _____ whether I'll get another chance to retake the exam",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "doubt",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "are .... sure",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "am ... doubting",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "doubts",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+                {
+            "id": 19, 
+            "content": "I suppose she might be at home tonight, but I ____ it",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "sure",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "are .... sure",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "am ... doubting",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "doubt",
+                    "isAnswer": true
+                }
+            ]
+
+        },
+        {
+            "id": 20, 
+            "content": "The new science museum currently _____ 10,000 visitors a month",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "attracts",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "attract",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "is attracting",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "attracted",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+                {
+            "id": 21, 
+            "content": "Flowers ____ bees with thier brightly-coloured petals",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "attracts",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "is attracting",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "attract",
+                    "isAnswer": true
+                },
+                {
+                    "id": 4,
+                    "content": "attracted",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 22, 
+            "content": "Carlos won't work at the top of the 20-storey building because he ___ heights",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "likes",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "doesn't like",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "is liking",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "is not liking",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 23, 
+            "content": "A: How is the new job? B: Well, at the moment, I ____ it at all.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "don't like",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "like",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "am like",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "does not like",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 24, 
+            "content": "My car's in the garage today. They____ new brakes.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "fit",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "'re fitting",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "aren't fitting",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "will fit",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 25, 
+            "content": "I bought this jumper for Anna, but it ___ her so I'll try to take it back",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "not fit",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "isn't fitting",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "doesn't fit",
+                    "isAnswer": true
+                },
+                {
+                    "id": 4,
+                    "content": "won't fit",
+                    "isAnswer": false
+                }
+            ]
+
+        }
     ]
 }
 

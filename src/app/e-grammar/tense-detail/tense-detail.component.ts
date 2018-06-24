@@ -53,6 +53,18 @@ export class TenseDetailComponent implements OnChanges {
     this.tenseService.get(tenseUrl).subscribe( res => {
       this.quiz = new Quiz(res);
       this.page.num = this.quiz.questions.length;
+      this.page.index = 0;
+      this.page.size = 1;
+      this.isVisited = false;
+      this.ansOptId = 0;
+      this.correctColor = '';
+      this.uncorrectColor = '';
+      this.hind = '' ;
+      this.correct = null;
+      this.correctQues= 0;
+      this.percentRight= 0;
+      this.percent='0%';
+      
     })
   }
 
