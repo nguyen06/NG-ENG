@@ -3,37 +3,344 @@
     "name": "Past Present",
     "questions": [ 
         {
-            
             "id": 1, 
-            "content": "AI: Nice to meet you, Iantha. I'm Alan, but my friends ___ me Al. Iantha is an unusual. Where __ it __ from?",
+            "content": "A: What ____ you ____ at just then? You ____",
             "isVisited": false,
             "answered": {
                 "corrected": false,
                 "option_id": 0,
                 "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
             },
             "options": [
-                {   
+                {
                     "id": 1,
-                    "content": "call .. does ... come",
+                    "content": "were ... looking ... smiled",
                     "isAnswer": true
                 },
                 {
                     "id": 2,
-                    "content": "ask ...is ... from",
+                    "content": "was ... looking ... smiled",
                     "isAnswer": false
                 },
                 {
                     "id": 3,
-                    "content": "tell ... do ... from",
+                    "content": "were ... look ... smiled",
                     "isAnswer": false
                 },
                 {
                     "id": 4,
-                    "content": "speak .. will ... from",
+                    "content": "are ... looking ... smiled",
                     "isAnswer": false
                 }
             ]
+
+        },
+        {
+            "id": 2, 
+            "content": "B: I ___ the video of Nicole's wedding. She ___ so excited and happy",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "were looking .. looked ",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "was looking ... looking",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "was looking ... look",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "was looking ... looked",
+                    "isAnswer": true
+                }
+            ]
+
+        },
+        {
+            "id": 3, 
+            "content": "A: How ___ she and Matt ___?",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "does ... meet",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "did ... meet",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "do ... meet",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "was ... meet",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 4, 
+            "content": "B: At my graduation party. Matt almost ____. He ___ for a big exam. Luckly, he ____ his mind. The rest is history",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "didn't come ... was studying ... changed",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "didn't come ... were studying ... changed",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "didn't come ... studied ... changed",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "didn't come ... studied ... was changing",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 5, 
+            "content": "A: I ____ your Supperman web page while I ____ the Internet. It's great",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "find ... were surfing",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "found ... were surfing",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "found ... am surfing",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "find .... am surfing",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 6, 
+            "content": "B: When ___ you ___ a Supperman fan?",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "did ... become",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "do ... became",
+                    "isAnswer":false
+                },
+                {
+                    "id": 3,
+                    "content": "did ... became",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "do .... becoming",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 7, 
+            "content": "A: Years ago, I ___ a commic book when I ___ to marry Lois Lane! Just kidding. I ___ to draw Lois Lan --and Supperman and Wonder Woman",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "read ... decide ... want",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "readed ... decided ... wanted",
+                    "isAnswer":false
+                },
+                {
+                    "id": 3,
+                    "content": "read ... decided ... wanted",
+                    "isAnswer": true
+                },
+                {
+                    "id": 4,
+                    "content": "reading ... deciding .... want",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 8, 
+            "content": "B: Me too. In fact, I ____ graphic arts when I ___ my web page",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "was studying ... started",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "study ... started",
+                    "isAnswer":false
+                },
+                {
+                    "id": 3,
+                    "content": "was studying ... was starting",
+                    "isAnswer": true
+                },
+                {
+                    "id": 4,
+                    "content": "studied ... started",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 9, 
+            "content": "A: ___ Jason __ you when he ___ over last night?",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "does ... surprise ... come",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "did ... surprise ... came",
+                    "isAnswer":true
+                },
+                {
+                    "id": 3,
+                    "content": "was ... surprising .... come",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "were ... surprising ... came",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 10, 
+            "content": "A: I ___ some ice skaters on TV when he ___ on the door. When the show ____, we _____ a delicious dinner. And while we _____, Json _____ me to marrry him!",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "was watched ... knocked ... ended ... had .. were eating ... asked",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "was watching ... knocked ... ended ... had .. were eating ... asked",
+                    "isAnswer":true
+                },
+                {
+                    "id": 3,
+                    "content": "were watched ... knocked ... ended ... had .. were eating ... asked",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "was watched ... knocked ... end ... had .. were eating ... askes",
+                    "isAnswer": false
+                }
+            ]
+
         }
     ]
 }

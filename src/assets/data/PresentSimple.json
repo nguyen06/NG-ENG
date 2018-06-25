@@ -838,6 +838,278 @@
                 }
             ]
 
+        },
+        {
+            "id": 26, 
+            "content": "What's your shirt made from? It ___ like silk>",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "feels",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "isn't feeling",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "doesn't feel",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "won't feel",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 27, 
+            "content": "I won't be coming to work today. I _____ very well",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "feels",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "am not feeling",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "doesn't feel",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "won't feel",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 28, 
+            "content": "The roof of the house _____ only plastic sheets nailed down in a few places",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "consists of",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "consists",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "doesn't consist",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "won't consist",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 29, 
+            "content": "Their school uniform ____ black trousers and a dark green jumper.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "consists of",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "consists",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "doesn't consist",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "won't consist",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 30, 
+            "content": "Simon's new song ______ quite good, but he doesn't think he's ready yet to perform it in public.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "sounded",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "is sounding",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "doesn't sound",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "won't sound",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 31, 
+            "content": "What is that noise? It _____ like a bird stuck in the chemmey.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "sounds",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "is sounding",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "doesn't sound",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "won't sound",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 32, 
+            "content": "Poulson ____ treatment for a knee injury, but should be fit to play on Saturday.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "is taking",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "have",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "is having",
+                    "isAnswer": true
+                },
+                {
+                    "id": 4,
+                    "content": "won't take",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 33, 
+            "content": "My sister ____ long blonde hair. You're bound to recognise her.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "has",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "have",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "is having",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "had",
+                    "isAnswer": false
+                }
+            ]
+
         }
     ]
 }
