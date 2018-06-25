@@ -1,3 +1,57 @@
 .btn-round {
     border-radius: 20px;
 }
+@media (min-width: 320px) {
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0.5rem;
+    } 
+    .navbar-brand {
+        display: inline-block;
+        /* padding-top: 0.3125rem; */
+        /* padding-bottom: 0.3125rem; */
+        /* margin-right: 1rem; */
+        font-size: 0.5rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        width: 70%;
+        margin: auto;
+    }
+    .pt-4[_ngcontent-c2] {
+        padding-top: 9rem !important;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        width: 70%;
+        margin: auto;
+    }
+    .pt-4[_ngcontent-c2] {
+        padding-top: 9rem !important;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
