@@ -1,5 +1,5 @@
 .pt-4{
-    padding-top: 9rem !important;
+    padding-top: 2rem !important;
 }
 .container{
     text-align: center;
@@ -42,7 +42,7 @@
 
 .btn.btn-lg {
     padding: 1rem 2.0rem;
-    font-size: 0.94rem;
+    font-size: 0.50rem;
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 320px) { 
@@ -59,10 +59,10 @@
 
     .btn.btn-lg[_ngcontent-c2] {
             padding: 1rem 1.0rem;
-            font-size: 0.8rem;
+            font-size: 0.5rem;
     }
     
-    .pt-4[_ngcontent-c2] {
+    .pt-4{
         padding-top: 1rem !important;
     }
 
