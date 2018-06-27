@@ -104,7 +104,7 @@
         },
         {
             "id": 4, 
-            "content": "IanTha: Well, I usually ____ computer equipment, but right now I _____ at a flower shop. My uncle _____ it",
+            "content": "IanTha: Well, I used to ____ computer equipment, but right now I _____ at a flower shop. My uncle _____ it",
             "isVisited": false,
             "answered": {
                 "corrected": false,
@@ -201,7 +201,7 @@
         },
         {
             "id": 7, 
-            "content": "Greg: You ______ Lucky . That's her nick. Everyone ____ him Lucky because he _____ things",
+            "content": "Greg: You ______ Lucky . That's her nickname. Everyone ____ him Lucky because he _____ things",
             "isVisited": false,
             "answered": {
                 "corrected": false,
