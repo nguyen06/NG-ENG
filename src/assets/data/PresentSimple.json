@@ -83,12 +83,12 @@
                 {
                     "id": 1,
                     "content": "do.... do",
-                    "isAnswer": true
+                    "isAnswer": false
                 },
                 {
                     "id": 2,
-                    "content": "are ... do",
-                    "isAnswer": false
+                    "content": "are ... doing",
+                    "isAnswer": true
                 },
                 {
                     "id": 3,
@@ -1106,6 +1106,312 @@
                 {
                     "id": 4,
                     "content": "had",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 34 , 
+            "content": "Ella stays with us quite often. The children ____ having her here.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "love",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "is loving",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "loves",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "loved",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 35, 
+            "content": "Ella's with us at the moment. The children _____ having her here.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "love",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "is loving",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "loves",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "loved",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 36, 
+            "content": "I _____ that the company will have to be sold",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "regreted",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "is regreting",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "regret",
+                    "isAnswer": true
+                },
+                {
+                    "id": 4,
+                    "content": "regrets",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 37, 
+            "content": "I _____ my decidion to give her a job",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "regreted",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "is regretting",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "regret",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "regrets",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 38, 
+            "content": "The app _____ to work on my phone.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "doesn't appear",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "appears",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "is appearing",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "are appearing",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 39, 
+            "content": "Tom ___ currently ____ in a musical on Broadway.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "doesn't appear",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "is .... appearing",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "is ... appeared",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "are appearing",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 40, 
+            "content": "He _____ taking early retirement.",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "is considering",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "considers",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "are considering",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "will appear",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 41, 
+            "content": "He _____ you now",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "believes",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2,
+                    "content": "is believing",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "content": "are believing",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "will believe",
+                    "isAnswer": false
+                }
+            ]
+
+        },
+        {
+            "id": 42, 
+            "content": "I ___ you park outside the city and get the bus to the centre",
+            "isVisited": false,
+            "answered": {
+                "corrected": false,
+                "option_id": 0,
+                "hindUrl": "http://ngl.cengage.com/assets/downloads/grex_pro0000000538/grex1_su3.pdf"
+
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "content": "suggests",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "content": "suggest",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3,
+                    "content": "is suggesting",
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "content": "will suggest",
                     "isAnswer": false
                 }
             ]
