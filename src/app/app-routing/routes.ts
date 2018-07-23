@@ -8,12 +8,14 @@ import {
     routes as childRoutes,
     tenses
 } from '../tense-details/tense-details.module';
+import { LoginComponent } from '../login/login.component';
 export const routes: Routes = [
     {path:'', component: HomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'writing', component: WritingComponent},
     {path: 'e-grammar', component: EGrammarComponent},
     {path: 'reading', component: ReadingComponent},
+    {path: 'login', component: LoginComponent},
     {
         path: 'tenseDetails/:name', 
         component: TenseDetailsComponent,

@@ -8,6 +8,7 @@ import {
 
 import { AppComponent } from './app.component';
 import { TenseService } from './services/tense.service';
+import { AuthenticationService} from './services/authentication.service';
 
 
 import { MDBBootstrapModule } from './../../angular-bootstrap-md';
@@ -26,6 +27,7 @@ import {
 import { TenseDetailsComponent } from './tense-details/tense-details.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { TenseDetailComponent } from './e-grammar/tense-detail/tense-detail.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -37,6 +39,7 @@ import { TenseDetailComponent } from './e-grammar/tense-detail/tense-detail.comp
     HomeComponent,
     EGrammarComponent,
     TenseDetailComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import { TenseDetailComponent } from './e-grammar/tense-detail/tense-detail.comp
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue:'/'},
-    TenseService
+    TenseService,
+    AuthenticationService
   ],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
