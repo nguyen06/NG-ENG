@@ -8,10 +8,11 @@ import {
 
 import { AppComponent } from './app.component';
 import { TenseService } from './services/tense.service';
-import { AuthenticationService} from './services/authentication.service';
+import { authenticationService} from './services/authentication.service';
 
 
 import { MDBBootstrapModule } from './../../angular-bootstrap-md';
+import { AuthGuard } from './authentication/auth.guard';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -52,8 +53,9 @@ import { LoginComponent } from './login/login.component';
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue:'/'},
+    AuthGuard,
     TenseService,
-    AuthenticationService
+    authenticationService
   ],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
