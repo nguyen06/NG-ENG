@@ -13,7 +13,7 @@ import { authenticationService} from './services/authentication.service';
 
 import { MDBBootstrapModule } from './../../angular-bootstrap-md';
 import { AuthGuard } from './authentication/auth.guard';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { WritingComponent } from './writing/writing.component';
@@ -29,6 +29,7 @@ import { TenseDetailsComponent } from './tense-details/tense-details.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { TenseDetailComponent } from './e-grammar/tense-detail/tense-detail.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -41,12 +42,14 @@ import { LoginComponent } from './login/login.component';
     EGrammarComponent,
     TenseDetailComponent,
     LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     tenses

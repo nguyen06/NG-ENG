@@ -16,8 +16,8 @@ export class UserService {
     return this.http.get('./users/users/'+ id);
   }
 
-  create(user: User){
-    return this.http.post('/users/register', user);
+  register(user: User){
+    return this.http.post<any>('https://pure-tor-72835.herokuapp.com/users/register', user);
   }
   update(user: User){
     return this.http.put('/user/users'+ user.id, user);
