@@ -30,6 +30,9 @@ import { APP_BASE_HREF } from '@angular/common';
 import { TenseDetailComponent } from './e-grammar/tense-detail/tense-detail.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ListeningComponent } from './listening/listening.component';
+import { ElementaryComponent } from './listening/elementary/elementary.component';
+import { LessonDetailComponent } from './listening/elementary/lesson-detail/lesson-detail.component';
 
 
 @NgModule({
@@ -43,6 +46,9 @@ import { RegisterComponent } from './register/register.component';
     TenseDetailComponent,
     LoginComponent,
     RegisterComponent,
+    ListeningComponent,
+    ElementaryComponent,
+    LessonDetailComponent,
   ],
   imports: [
     BrowserModule,
