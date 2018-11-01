@@ -9,7 +9,7 @@ import {
 import { AppComponent } from './app.component';
 import { TenseService } from './services/tense.service';
 import { authenticationService} from './services/authentication.service';
-
+import { ReadingService } from './services/reading/reading-service.service';
 
 import { MDBBootstrapModule } from './../../angular-bootstrap-md';
 import { AuthGuard } from './authentication/auth.guard';
@@ -33,6 +33,7 @@ import { RegisterComponent } from './register/register.component';
 import { ListeningComponent } from './listening/listening.component';
 import { ElementaryComponent } from './listening/elementary/elementary.component';
 import { LessonDetailComponent } from './listening/elementary/lesson-detail/lesson-detail.component';
+import { IReadingComponent } from './i-reading/i-reading.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { LessonDetailComponent } from './listening/elementary/lesson-detail/less
     ListeningComponent,
     ElementaryComponent,
     LessonDetailComponent,
+    IReadingComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,6 +66,7 @@ import { LessonDetailComponent } from './listening/elementary/lesson-detail/less
     {provide: APP_BASE_HREF, useValue:'/'},
     AuthGuard,
     TenseService,
+    ReadingService,
     authenticationService
   ],
   bootstrap: [AppComponent],
