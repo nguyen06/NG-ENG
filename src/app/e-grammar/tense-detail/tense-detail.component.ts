@@ -50,7 +50,6 @@ export class TenseDetailComponent implements OnChanges {
 
 
   loadQuiz(tenseUrl: string){
-    debugger;
     this.tenseService.get(tenseUrl).subscribe( res => {
       this.quiz = new Quiz(res);
       this.page.num = this.quiz.questions.length;
