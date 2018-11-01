@@ -11,6 +11,7 @@ import {
 } from '../tense-details/tense-details.module';
 import { LoginComponent } from '../login/login.component';
 import { RegisterComponent } from '../register/register.component';
+import { ElementaryComponent } from '../listening/elementary/elementary.component';
 export const routes: Routes = [
     {path:'', component: HomeComponent, canActivate: [AuthGuard]},
     {path: 'home', component: HomeComponent},
@@ -19,6 +20,7 @@ export const routes: Routes = [
     {path: 'reading', component: ReadingComponent, canActivate: [AuthGuard]},
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
+    {path: 'listen-elementary', component: ElementaryComponent},
     {
         path: 'tenseDetails/:name', 
         component: TenseDetailsComponent,

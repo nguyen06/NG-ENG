@@ -1,0 +1,23 @@
+<div class="container" >
+  <div class="btn-group pt-4 ml-15">
+      <button class="btn btn-primary btn-lg dropdown-toggle" 
+              type="button" 
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              mdbWavesEffect
+              >
+          {{selectedLesson}}
+      </button>
+      <div class="dropdown-menu dropdown dropdown-info" >
+          <a class="dropdown-item" (click)="selectLesson('Clap Clap Clap')">Clap Clap Clap</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" (click)="selectLesson('Button Up')">Button up</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" (click)="selectLesson('Come On Everyday')">Come on everyday</a>
+      </div>
+  </div>
+  <div *ngIf="goto === true">
+    <app-lesson-detail [selectedLessonTransfer]="selectedLessonTranfer"></app-lesson-detail>
+</div>
+</div>
