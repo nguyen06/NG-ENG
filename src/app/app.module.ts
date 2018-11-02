@@ -33,7 +33,8 @@ import { RegisterComponent } from './register/register.component';
 import { ListeningComponent } from './listening/listening.component';
 import { ElementaryComponent } from './listening/elementary/elementary.component';
 import { LessonDetailComponent } from './listening/elementary/lesson-detail/lesson-detail.component';
-import { IReadingComponent } from './i-reading/i-reading.component';
+import { IReadingDetailComponent } from './reading/i-reading/i-reading-detail/i-reading-detail.component';
+import { IReadingComponent } from './reading/i-reading/i-reading.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { IReadingComponent } from './i-reading/i-reading.component';
     ListeningComponent,
     ElementaryComponent,
     LessonDetailComponent,
+    IReadingDetailComponent,
     IReadingComponent,
   ],
   imports: [

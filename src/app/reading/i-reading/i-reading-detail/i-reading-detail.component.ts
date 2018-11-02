@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ReadingService } from '../services/reading/reading-service.service';
-import { readingModel } from '../models/reading/reading.model';
-import { readingLessons } from '../models/reading/lessons.model';
+import { ReadingService } from '../../../services/reading/reading-service.service';
+import { readingModel } from '../../../models/reading/reading.model';
+import { readingLessons } from '../../../models/reading/lessons.model';
 
 @Component({
   selector: 'app-i-reading',
-  templateUrl: './i-reading.component.html',
-  styleUrls: ['./i-reading.component.scss']
+  templateUrl: './i-reading-detail.component.html',
+  styleUrls: ['./i-reading-detail.component.scss']
 })
-export class IReadingComponent implements OnInit {
+export class IReadingDetailComponent implements OnInit {
 
   page = {
     index:0,

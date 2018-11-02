@@ -4,8 +4,8 @@ import { ReadingComponent } from '../reading/reading.component';
 import { HomeComponent } from '../home/home.component';
 import { EGrammarComponent } from '../e-grammar/e-grammar.component';
 
-import {IReadingComponent} from '../i-reading/i-reading.component';
-
+import {IReadingDetailComponent} from '../reading/i-reading/i-reading-detail/i-reading-detail.component';
+import { IReadingComponent } from '../reading/i-reading/i-reading.component';
 
 import { TenseDetailsComponent } from '../tense-details/tense-details.component';
 import { AuthGuard } from '../authentication/auth.guard';
@@ -25,7 +25,9 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'listen-elementary', component: ElementaryComponent},
-    {path: 'i-reading', component: IReadingComponent, canActivate: [AuthGuard]},
+    {path: 'i-reading-detail', component: IReadingDetailComponent, canActivate: [AuthGuard]},
+    {path: 'i-reading', component: IReadingComponent},
+
     {
         path: 'tenseDetails/:name', 
         component: TenseDetailsComponent,
