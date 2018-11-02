@@ -3,6 +3,10 @@ import { WritingComponent } from '../writing/writing.component';
 import { ReadingComponent } from '../reading/reading.component';
 import { HomeComponent } from '../home/home.component';
 import { EGrammarComponent } from '../e-grammar/e-grammar.component';
+
+import {IReadingComponent} from '../i-reading/i-reading.component';
+
+
 import { TenseDetailsComponent } from '../tense-details/tense-details.component';
 import { AuthGuard } from '../authentication/auth.guard';
 import {
@@ -21,6 +25,7 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'listen-elementary', component: ElementaryComponent},
+    {path: 'i-reading', component: IReadingComponent, canActivate: [AuthGuard]},
     {
         path: 'tenseDetails/:name', 
         component: TenseDetailsComponent,
