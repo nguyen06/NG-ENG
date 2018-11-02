@@ -6094,7 +6094,7 @@ var routes = [
     { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"] },
     { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_10__["RegisterComponent"] },
     { path: 'listen-elementary', component: _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_11__["ElementaryComponent"] },
-    { path: 'i-reading', component: _i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_5__["IReadingComponent"] },
+    { path: 'i-reading', component: _i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_5__["IReadingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
     {
         path: 'tenseDetails/:name',
         component: _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_6__["TenseDetailsComponent"],
@@ -6791,8 +6791,9 @@ var IReadingComponent = /** @class */ (function () {
         configurable: true
     });
     IReadingComponent.prototype.goto = function (index) {
-        debugger;
-        this.page.index = index;
+        if (index >= 0 && index < this.page.num) {
+            this.page.index = index;
+        }
     };
     IReadingComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -7032,7 +7033,7 @@ module.exports = " <div class=\"container\">\n      <div class=\"row\">\n       
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQ0FDSixFQUFDOztBQUNEO0VBQ0ksZUFBYyxFQUFHIiwiZmlsZSI6InNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWRlZmF1bHR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBkNDdhMSAhaW1wb3J0YW50XG59XG4uZGFuZ2VyLXRleHQge1xuICAgIGNvbG9yOiAjZmYzNTQ3OyB9Il19 */"
+module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n\n.mt-5 {\n  padding-top: 20vh; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQ0FDSixFQUFDOztBQUNEO0VBQ0ksZUFBYyxFQUNqQjs7QUFDRDtFQUNJLGtCQUFnQixFQUNuQiIsImZpbGUiOiJzcmMvYXBwL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJ0bi1kZWZhdWx0e1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwZDQ3YTEgIWltcG9ydGFudFxufVxuLmRhbmdlci10ZXh0IHtcbiAgICBjb2xvcjogI2ZmMzU0NzsgXG59XG4ubXQtNXtcbiAgICBwYWRkaW5nLXRvcDoyMHZoO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -7252,7 +7253,7 @@ module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQ0FDSixFQUFDOztBQUNEO0VBQ0ksZUFBYyxFQUFHIiwiZmlsZSI6InNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWRlZmF1bHR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBkNDdhMSAhaW1wb3J0YW50XG59XG4uZGFuZ2VyLXRleHQge1xuICAgIGNvbG9yOiAjZmYzNTQ3OyB9Il19 */"
+module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n\n.mt-5 {\n  padding-top: 15vh; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQ0FDSixFQUFDOztBQUNEO0VBQ0ksZUFBYyxFQUNqQjs7QUFDRDtFQUNJLGtCQUFpQixFQUNwQiIsImZpbGUiOiJzcmMvYXBwL3JlZ2lzdGVyL3JlZ2lzdGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJ0bi1kZWZhdWx0e1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwZDQ3YTEgIWltcG9ydGFudFxufVxuLmRhbmdlci10ZXh0IHtcbiAgICBjb2xvcjogI2ZmMzU0NzsgXG59XG4ubXQtNXtcbiAgICBwYWRkaW5nLXRvcDogMTV2aDtcbn0iXX0= */"
 
 /***/ }),
 
