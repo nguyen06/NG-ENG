@@ -25,7 +25,7 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'listen-elementary', component: ElementaryComponent},
-    {path: 'i-reading', component: IReadingComponent},
+    {path: 'i-reading', component: IReadingComponent, canActivate: [AuthGuard]},
     {
         path: 'tenseDetails/:name', 
         component: TenseDetailsComponent,

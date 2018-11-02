@@ -52,8 +52,10 @@ export class IReadingComponent implements OnInit {
   }
 
   goto(index: number){
-    debugger;
-    this.page.index = index;
+    if(index >= 0 && index < this.page.num){
+      this.page.index = index;
+    }
+    
   }
 
 }
