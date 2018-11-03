@@ -35,6 +35,7 @@ import { ElementaryComponent } from './listening/elementary/elementary.component
 import { LessonDetailComponent } from './listening/elementary/lesson-detail/lesson-detail.component';
 import { IReadingDetailComponent } from './reading/i-reading/i-reading-detail/i-reading-detail.component';
 import { IReadingComponent } from './reading/i-reading/i-reading.component';
+import { IReadingMenuComponent } from './reading/i-reading/i-reading-menu/i-reading-menu.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { IReadingComponent } from './reading/i-reading/i-reading.component';
     LessonDetailComponent,
     IReadingDetailComponent,
     IReadingComponent,
+    IReadingMenuComponent,
   ],
   imports: [
     BrowserModule,

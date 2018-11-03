@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IReadingDetailComponent } from './i-reading-detail.component';
+import { IReadingMenuComponent } from './i-reading-menu.component';
 
-describe('IReadingComponent', () => {
-  let component: IReadingDetailComponent;
-  let fixture: ComponentFixture<IReadingDetailComponent>;
+describe('IReadingMenuComponent', () => {
+  let component: IReadingMenuComponent;
+  let fixture: ComponentFixture<IReadingMenuComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IReadingDetailComponent ]
+      declarations: [ IReadingMenuComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IReadingDetailComponent);
+    fixture = TestBed.createComponent(IReadingMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

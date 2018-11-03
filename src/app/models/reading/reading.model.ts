@@ -4,7 +4,6 @@ export class readingModel {
     content: string;
     audio: string;
     constructor(data: any){
-        debugger;
             this.id = data.healthId;
             this.title = data.title;
             this.audio = data.audio;

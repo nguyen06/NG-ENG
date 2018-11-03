@@ -9,7 +9,6 @@ export class ReadingService {
   constructor(private http: HttpClient) { }
 
   get(url: string){
-    debugger;
     return this.http.get(url);
   }
 }

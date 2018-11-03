@@ -6,6 +6,7 @@ import { EGrammarComponent } from '../e-grammar/e-grammar.component';
 
 import {IReadingDetailComponent} from '../reading/i-reading/i-reading-detail/i-reading-detail.component';
 import { IReadingComponent } from '../reading/i-reading/i-reading.component';
+import { IReadingMenuComponent } from "../reading/i-reading/i-reading-menu/i-reading-menu.component";
 
 import { TenseDetailsComponent } from '../tense-details/tense-details.component';
 import { AuthGuard } from '../authentication/auth.guard';
@@ -25,8 +26,10 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'listen-elementary', component: ElementaryComponent},
-    {path: 'i-reading-detail', component: IReadingDetailComponent, canActivate: [AuthGuard]},
+    {path: 'i-reading-detail/:lesson/:id', component: IReadingDetailComponent, canActivate: [AuthGuard]},
     {path: 'i-reading', component: IReadingComponent},
+    {path: "i-reading-menu/:id", component: IReadingMenuComponent},
+
 
     {
         path: 'tenseDetails/:name', 

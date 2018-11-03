@@ -5,7 +5,6 @@ export class readingLessons {
     title: string;
     lessons: readingModel[];
     constructor(data: any){
-        debugger;
         if(data){
             this.name = data.name;
             this.title = data.title;

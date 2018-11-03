@@ -6483,7 +6483,7 @@ var TenseDetailComponent = /** @class */ (function () {
         ];
     }
     TenseDetailComponent.prototype.ngOnChanges = function () {
-        debugger;
+        ;
         for (var _i = 0, _a = this.tense_config; _i < _a.length; _i++) {
             var entry = _a[_i];
             if (entry.name === this.tenName) {
@@ -6512,7 +6512,7 @@ var TenseDetailComponent = /** @class */ (function () {
     };
     Object.defineProperty(TenseDetailComponent.prototype, "questions", {
         get: function () {
-            debugger;
+            ;
             return (this.quiz.questions) ? this.quiz.questions.slice(this.page.index, this.page.index + this.page.size) : [];
         },
         enumerable: true,
@@ -6544,7 +6544,7 @@ var TenseDetailComponent = /** @class */ (function () {
         }
     };
     TenseDetailComponent.prototype.goto = function (index) {
-        debugger;
+        ;
         if (index >= 0 && index < this.page.num) {
             this.correct = this.quiz.questions[index].answered.corrected;
             this.ansOptId = this.quiz.questions[index].answered.option_id;
@@ -7030,7 +7030,7 @@ __webpack_require__.r(__webpack_exports__);
 var readingLessons = /** @class */ (function () {
     function readingLessons(data) {
         var _this = this;
-        debugger;
+        ;
         if (data) {
             this.name = data.name;
             this.title = data.title;
@@ -7059,7 +7059,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "readingModel", function() { return readingModel; });
 var readingModel = /** @class */ (function () {
     function readingModel(data) {
-        debugger;
+        ;
         this.id = data.healthId;
         this.title = data.title;
         this.audio = data.audio;
@@ -7133,7 +7133,7 @@ var IReadingDetailComponent = /** @class */ (function () {
             }];
     }
     IReadingDetailComponent.prototype.ngOnInit = function () {
-        debugger;
+        ;
         for (var _i = 0, _a = this.reading_config; _i < _a.length; _i++) {
             var entry = _a[_i];
             this.loadLesson(entry.content);
@@ -7141,9 +7141,9 @@ var IReadingDetailComponent = /** @class */ (function () {
     };
     IReadingDetailComponent.prototype.loadLesson = function (le) {
         var _this = this;
-        debugger;
+        ;
         this.readingservice.get(le).subscribe(function (res) {
-            debugger;
+            ;
             _this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](res);
             _this.page.num = _this.lessons.lessons.length;
             _this.page.index = 0;
@@ -7152,7 +7152,7 @@ var IReadingDetailComponent = /** @class */ (function () {
     };
     Object.defineProperty(IReadingDetailComponent.prototype, "lesson", {
         get: function () {
-            debugger;
+            ;
             return (this.lessons.lessons) ? this.lessons.lessons.slice(this.page.index, this.page.index + this.page.size) : [];
         },
         enumerable: true,
@@ -7534,7 +7534,7 @@ var ReadingService = /** @class */ (function () {
         this.http = http;
     }
     ReadingService.prototype.get = function (url) {
-        debugger;
+        ;
         return this.http.get(url);
     };
     ReadingService = __decorate([

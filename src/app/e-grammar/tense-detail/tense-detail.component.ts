@@ -40,7 +40,6 @@ export class TenseDetailComponent implements OnChanges {
   }
 
   ngOnChanges() {
-    debugger;
     for(let entry of this.tense_config){
       if(entry.name === this.tenName){
         this.tenseUrl = entry.content;
@@ -70,7 +69,6 @@ export class TenseDetailComponent implements OnChanges {
   }
 
   get questions(){
-    debugger;
     return (this.quiz.questions)? this.quiz.questions.slice(this.page.index, this.page.index + this.page.size) : [];
   }
 
@@ -100,7 +98,6 @@ export class TenseDetailComponent implements OnChanges {
   }
 
   goto(index: number){
-    debugger;
     if(index >= 0 && index < this.page.num){
       this.correct = this.quiz.questions[index].answered.corrected;
       this.ansOptId = this.quiz.questions[index].answered.option_id;

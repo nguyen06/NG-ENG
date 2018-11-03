@@ -1,58 +1,19 @@
 <div class="container pt-6">
     <div class="row">
       <div class="col-4"><hr size="90"></div>
-      <div class="col-4"><h4 class="text-center text-info">Categories</h4></div>
+      <div class="col-4"><h4 class="text-center text-info">{{categories.title}}</h4></div>
       <div class="col-4"><hr size="90"></div>
     </div>
     <div class="row pt-4">
-      <div class="col-md-12 pb-4">
-        <div class="row">
-          <div class="col-4">
-            <a routerLink="/i-reading-detail">
-              <img src="../../../assets/images/reading/i-reading/health.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-              <h6 class="text-center text-info pt-3">Health</h6>
-            </a>           
-
-          </div>
-          <div class="col-4">                       
-            <img src="../../../assets/images/reading/i-reading/animals.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-            <h6 class="text-center text-info pt-3">Animals</h6>  
-          </div>
-          <div class="col-4">          
-            <img src="../../../assets/images/reading/i-reading/america.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-            <h6 class="text-center text-info pt-3">America</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12  pb-4 ">
-        <div class="row">
-          <div class="col-4">
-            <img src="../../../assets/images/reading/i-reading/history.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-            <h6 class="text-center text-info pt-3">History</h6>
-          </div>
-          <div class="col-4">
-              <img src="../../../assets/images/reading/i-reading/people.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-              <h6 class="text-center text-info pt-3">People</h6>
-          </div>
-          <div class="col-4">
-              <img src="../../../assets/images/reading/i-reading/place.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-              <h6 class="text-center text-info pt-3">Place</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 4 pb-5">
-        <div class="row">
-          <div class="col-4">
-              <img src="../../../assets/images/reading/i-reading/sport.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-              <h6 class="text-center text-info pt-3">Sport</h6>
-          </div>
-          <div class="col-4">
-              <img src="../../../assets/images/reading/i-reading/studying.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-              <h6 class="text-center text-info pt-3">Studying</h6>
-          </div>
-          <div class="col-4">
-              <img src="../../../assets/images/reading/i-reading/music.jpeg" alt="categories" class="img-fluid z-depth-2 img-thumbnail">
-              <h6 class="text-center text-info pt-3">Music</h6>
+      <div class="col-4 pb-4" *ngFor="let cate of categoriesArr">
+        <div class="thumbnail">
+          <div [routerLink]="['/i-reading-menu',cate.id]">
+              <img src="{{cate.src_img}}" alt="" class="img-fluid z-depth-2 img-thumbnail">
+              <div class="caption">
+                <h3>
+                    <h6 class="text-center text-info pt-3">{{cate.title}}</h6>
+                </h3>
+              </div>
           </div>
         </div>
       </div>
