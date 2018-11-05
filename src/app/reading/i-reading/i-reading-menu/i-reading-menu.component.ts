@@ -3,6 +3,9 @@ import { ReadingService } from '../../../services/reading/reading-service.servic
 import { readingModel } from '../../../models/reading/reading.model';
 import { readingLessons } from '../../../models/reading/lessons.model';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
+
+
 @Component({
   selector: 'app-i-reading-menu',
   templateUrl: './i-reading-menu.component.html',
@@ -10,10 +13,10 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class IReadingMenuComponent implements OnInit {
 
-  lessons: readingLessons = new readingLessons(null);
   lessonsArr: readingModel[];
-  lessonTitle: string;
+  lessonCate: string;
   id: string;
+  loading: boolean;
 
   reading_config = [{
     name: "health", content: "assets/data/reading/"
@@ -28,17 +31,19 @@ export class IReadingMenuComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log(this.id);
-    for(let entry of this.reading_config){
-        this.loadLesson(entry.content);
-    }
+    this.loadLesson(this.id);
   }
 
   loadLesson(para: string){
-    let url = para + this.id + "/" + this.id  + ".json";
-    this.readingservice.get(url).subscribe(res => {
-      this.lessons = new readingLessons(res);
-      this.lessonsArr = this.lessons.lessons;
+    debugger;
+    this.loading = true;
+    this.readingservice.getMenu(para).subscribe(res => {
+      debugger;
+      if(res.length !== 0){
+        this.loading = false;
+        this.lessonCate = res[0].category;
+        this.lessonsArr = res
+      }
     
     });
   }

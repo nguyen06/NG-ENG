@@ -6068,12 +6068,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../e-grammar/e-grammar.component */ "./src/app/e-grammar/e-grammar.component.ts");
 /* harmony import */ var _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../reading/i-reading/i-reading-detail/i-reading-detail.component */ "./src/app/reading/i-reading/i-reading-detail/i-reading-detail.component.ts");
 /* harmony import */ var _reading_i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../reading/i-reading/i-reading.component */ "./src/app/reading/i-reading/i-reading.component.ts");
-/* harmony import */ var _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../tense-details/tense-details.component */ "./src/app/tense-details/tense-details.component.ts");
-/* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
-/* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../register/register.component */ "./src/app/register/register.component.ts");
-/* harmony import */ var _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../listening/elementary/elementary.component */ "./src/app/listening/elementary/elementary.component.ts");
+/* harmony import */ var _reading_i_reading_i_reading_menu_i_reading_menu_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../reading/i-reading/i-reading-menu/i-reading-menu.component */ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.ts");
+/* harmony import */ var _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../tense-details/tense-details.component */ "./src/app/tense-details/tense-details.component.ts");
+/* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
+/* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../listening/elementary/elementary.component */ "./src/app/listening/elementary/elementary.component.ts");
+
 
 
 
@@ -6088,20 +6090,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]] },
+    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-    { path: 'writing', component: _writing_writing_component__WEBPACK_IMPORTED_MODULE_1__["WritingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]] },
-    { path: 'e-grammar', component: _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_4__["EGrammarComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]] },
-    { path: 'reading', component: _reading_reading_component__WEBPACK_IMPORTED_MODULE_2__["ReadingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]] },
-    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_10__["LoginComponent"] },
-    { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_11__["RegisterComponent"] },
-    { path: 'listen-elementary', component: _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_12__["ElementaryComponent"] },
-    { path: 'i-reading-detail', component: _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_5__["IReadingDetailComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]] },
+    { path: 'writing', component: _writing_writing_component__WEBPACK_IMPORTED_MODULE_1__["WritingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
+    { path: 'e-grammar', component: _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_4__["EGrammarComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
+    { path: 'reading', component: _reading_reading_component__WEBPACK_IMPORTED_MODULE_2__["ReadingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
+    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"] },
+    { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_12__["RegisterComponent"] },
+    { path: 'listen-elementary', component: _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_13__["ElementaryComponent"] },
+    { path: 'i-reading-detail/:lesson/:id', component: _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_5__["IReadingDetailComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]] },
     { path: 'i-reading', component: _reading_i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_6__["IReadingComponent"] },
+    { path: "i-reading-menu/:id", component: _reading_i_reading_i_reading_menu_i_reading_menu_component__WEBPACK_IMPORTED_MODULE_7__["IReadingMenuComponent"] },
     {
         path: 'tenseDetails/:name',
-        component: _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_7__["TenseDetailsComponent"],
-        children: _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_9__["routes"]
+        component: _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_8__["TenseDetailsComponent"],
+        children: _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_10__["routes"]
     }
 ];
 var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes);
@@ -6203,12 +6206,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _listening_elementary_lesson_detail_lesson_detail_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./listening/elementary/lesson-detail/lesson-detail.component */ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.ts");
 /* harmony import */ var _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./reading/i-reading/i-reading-detail/i-reading-detail.component */ "./src/app/reading/i-reading/i-reading-detail/i-reading-detail.component.ts");
 /* harmony import */ var _reading_i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./reading/i-reading/i-reading.component */ "./src/app/reading/i-reading/i-reading.component.ts");
+/* harmony import */ var _reading_i_reading_i_reading_menu_i_reading_menu_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./reading/i-reading/i-reading-menu/i-reading-menu.component */ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -6256,6 +6261,7 @@ var AppModule = /** @class */ (function () {
                 _listening_elementary_lesson_detail_lesson_detail_component__WEBPACK_IMPORTED_MODULE_24__["LessonDetailComponent"],
                 _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_25__["IReadingDetailComponent"],
                 _reading_i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_26__["IReadingComponent"],
+                _reading_i_reading_i_reading_menu_i_reading_menu_component__WEBPACK_IMPORTED_MODULE_27__["IReadingMenuComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -6483,7 +6489,6 @@ var TenseDetailComponent = /** @class */ (function () {
         ];
     }
     TenseDetailComponent.prototype.ngOnChanges = function () {
-        ;
         for (var _i = 0, _a = this.tense_config; _i < _a.length; _i++) {
             var entry = _a[_i];
             if (entry.name === this.tenName) {
@@ -6512,7 +6517,6 @@ var TenseDetailComponent = /** @class */ (function () {
     };
     Object.defineProperty(TenseDetailComponent.prototype, "questions", {
         get: function () {
-            ;
             return (this.quiz.questions) ? this.quiz.questions.slice(this.page.index, this.page.index + this.page.size) : [];
         },
         enumerable: true,
@@ -6544,7 +6548,6 @@ var TenseDetailComponent = /** @class */ (function () {
         }
     };
     TenseDetailComponent.prototype.goto = function (index) {
-        ;
         if (index >= 0 && index < this.page.num) {
             this.correct = this.quiz.questions[index].answered.corrected;
             this.ansOptId = this.quiz.questions[index].answered.option_id;
@@ -6591,7 +6594,7 @@ var TenseDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark indigo text-center\">\n      <a class=\"navbar-brand\" routerLink=\"/home\"><strong><h2>English tutorials</h2></strong></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n          <ul class=\"navbar-nav mr-auto\" >\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Listening<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/listen-elementary\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Speaking<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Reading<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/reading\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/i-reading\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Writing<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n                <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\">\n                Grammar<span class=\"caret\"></span></a>\n                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/e-grammar\">Elementary Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n                </div>\n              </li>\n          </ul>\n          <form class=\"form-inline waves-light\" mdbWavesEffect>\n              <div class=\"md-form mt-45\">\n                  <input class=\"form-control mr-sm-20\" type=\"text\" placeholder=\"Search\">\n              </div>\n          </form>\n          <button type=\"button\" class=\"btn btn-round btn-outline-default\" mdbWavesEffect>\n            <ul class=\"navbar-nav nav-flex-icons\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" routerLink=\"/login\">LOG IN &emsp;<i class=\"fa fa-sign-in\"></i></a>\n                </li>\n            </ul>\n          </button>\n      </div>\n  </nav>\n\n</header>\n<!--Main Navigation-->\n"
+module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark indigo text-center\">\n      <a class=\"navbar-brand\" routerLink=\"/home\"><strong><h2>English tutorials</h2></strong></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n          <ul class=\"navbar-nav mr-auto\" >\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Listening<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/listen-elementary\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Speaking<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Reading<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/reading\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/i-reading\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Writing<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n                <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\">\n                Grammar<span class=\"caret\"></span></a>\n                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/e-grammar\">Elementary Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n                </div>\n              </li>\n          </ul>\n          <form class=\"form-inline waves-light\" mdbWavesEffect>\n              <div class=\"md-form mt-45\">\n                  <input class=\"form-control mr-sm-20\" type=\"text\" placeholder=\"Search\">\n              </div>\n          </form>\n          <button type=\"button\" class=\"btn btn-round btn-outline-default\" mdbWavesEffect>\n            <ul class=\"navbar-nav nav-flex-icons\">\n                <li class=\"nav-item\">\n                    <a *ngIf=\"logout\" class=\"nav-link\" routerLink=\"/login\">LOG IN &emsp;<i class=\"fa fa-sign-in\"></i></a>\n                    <a *ngIf=\"login\" class=\"nav-link\" routerLink=\"/login\">LOGOUT &emsp;<i class=\"fa fa-sign-out\"></i></a>\n\n                </li>\n            </ul>\n          </button>\n      </div>\n  </nav>\n\n</header>\n<!--Main Navigation-->\n"
 
 /***/ }),
 
@@ -6617,6 +6620,7 @@ module.exports = ".btn-round {\n  border-radius: 20px; }\n\n@media (min-width: 3
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/authentication.service */ "./src/app/services/authentication.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6627,10 +6631,26 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent() {
+    function HeaderComponent(auth) {
+        this.auth = auth;
     }
     HeaderComponent.prototype.ngOnInit = function () {
+        debugger;
+        if (localStorage.getItem('currentUser')) {
+            this.a = JSON.parse(localStorage.getItem('currentUser'));
+            if (this.a['status'] === "OK") {
+                this.login = true;
+            }
+            else {
+                this.logout = true;
+                this.auth.logout();
+            }
+        }
+        else {
+            this.logout = true;
+        }
     };
     HeaderComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -6638,7 +6658,7 @@ var HeaderComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./header.component.html */ "./src/app/header/header.component.html"),
             styles: [__webpack_require__(/*! ./header.component.scss */ "./src/app/header/header.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_services_authentication_service__WEBPACK_IMPORTED_MODULE_1__["authenticationService"]])
     ], HeaderComponent);
     return HeaderComponent;
 }());
@@ -7015,6 +7035,59 @@ var LoginComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/models/reading/i-reading/categories.model.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/models/reading/i-reading/categories.model.ts ***!
+  \**************************************************************/
+/*! exports provided: categories */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "categories", function() { return categories; });
+/* harmony import */ var _category_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./category.model */ "./src/app/models/reading/i-reading/category.model.ts");
+
+var categories = /** @class */ (function () {
+    function categories(data) {
+        var _this = this;
+        if (data) {
+            this.title = data.title;
+            this.content = [];
+            data.content.forEach(function (element) {
+                _this.content.push(new _category_model__WEBPACK_IMPORTED_MODULE_0__["category"](element));
+            });
+        }
+    }
+    return categories;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/reading/i-reading/category.model.ts":
+/*!************************************************************!*\
+  !*** ./src/app/models/reading/i-reading/category.model.ts ***!
+  \************************************************************/
+/*! exports provided: category */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "category", function() { return category; });
+var category = /** @class */ (function () {
+    function category(data) {
+        this.id = data.id;
+        this.src_img = data.src_img;
+        this.title = data.title;
+    }
+    return category;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/models/reading/lessons.model.ts":
 /*!*************************************************!*\
   !*** ./src/app/models/reading/lessons.model.ts ***!
@@ -7030,7 +7103,6 @@ __webpack_require__.r(__webpack_exports__);
 var readingLessons = /** @class */ (function () {
     function readingLessons(data) {
         var _this = this;
-        ;
         if (data) {
             this.name = data.name;
             this.title = data.title;
@@ -7059,7 +7131,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "readingModel", function() { return readingModel; });
 var readingModel = /** @class */ (function () {
     function readingModel(data) {
-        ;
         this.id = data.healthId;
         this.title = data.title;
         this.audio = data.audio;
@@ -7079,7 +7150,7 @@ var readingModel = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main\">\n      <div *ngFor=\"let question of lesson;\">\n        <audio controls class=\"header__audio\">\n            <source src=\"#\" type=\"audio/ogg\">\n            <source src={{question.audio}} type=\"audio/mpeg\">\n            Your browser does not support the audio element.\n        </audio>\n        <div class=\"header__title\">\n                {{question.title}}\n            </div>\n          \n          <div class=\"body\" [innerHTML] =\"question.content\" ></div>\n      </div>\n\n</div>\n<footer class=\"footer-copyright fixed-bottom \">\n    <div class = \"blue py-3 text-center text-white\">\n    <i class=\"fa fa-fast-backward pr-5 fa-lg\" (click)=\"goto(0)\"></i>\n    <i class=\"fa fa-backward pr-5 fa-lg\" (click)=\"goto(page.index -1)\"></i>\n    <i class=\"fa fa-forward pr-5 fa-lg\" (click)=\"goto(page.index + 1)\"></i>\n    <i class=\"fa fa-fast-forward fa-lg\" (click)=\"goto(page.num-1)\"></i>\n    </div>\n  </footer>"
+module.exports = "<div class=\"main\">\n      <div *ngFor=\"let question of lesson;\">\n        <audio controls class=\"header__audio\">\n            <source src=\"#\" type=\"audio/ogg\">\n            <source src={{question.audio}} type=\"audio/mpeg\">\n            Your browser does not support the audio element.\n        </audio>\n        <div class=\"header__title\">\n                {{question.title}}\n                <div>\n                    <button class=\"btn btn-primary btn-sm\">\n                        Reading {{page.index}} of {{page.num-1}}\n                    </button>\n                </div>\n\n        </div>\n          \n          <div class=\"body\" [innerHTML] =\"question.content\" ></div>\n      </div>\n\n</div>\n<footer class=\"footer-copyright fixed-bottom \">\n    <div class = \"blue py-3 text-center text-white\">\n    <i class=\"fa fa-fast-backward pr-5 fa-lg\" (click)=\"goto(0)\"></i>\n    <i class=\"fa fa-backward pr-5 fa-lg\" (click)=\"goto(page.index - 1)\"></i>\n    <i class=\"fa fa-forward pr-5 fa-lg\" (click)=\"goto(page.index + 1)\"></i>\n    <i class=\"fa fa-fast-forward fa-lg\" (click)=\"goto(page.num-1)\"></i>\n    </div>\n  </footer>"
 
 /***/ }),
 
@@ -7090,7 +7161,7 @@ module.exports = "<div class=\"main\">\n      <div *ngFor=\"let question of less
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header__title {\n  display: block;\n  width: 100%;\n  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);\n  background-size: cover;\n  background-position: top;\n  text-align: center;\n  top: 2.5vh;\n  padding-top: 5rem;\n  position: relative;\n  font-size: 4.5vh;\n  z-index: 1; }\n\n.header__audio {\n  position: absolute;\n  width: 300px;\n  height: 300px;\n  bottom: 60px;\n  right: 25%;\n  left: 50%;\n  margin-left: -150px;\n  position: -webkit-sticky;\n  position: fixed;\n  z-index: 3000; }\n\n.body {\n  position: absolute;\n  margin-top: 8vh;\n  font-size: 1.2rem;\n  padding: 1.5rem;\n  z-index: 1;\n  margin-bottom: 10rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLWRldGFpbC9pLXJlYWRpbmctZGV0YWlsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBO0VBQ1EsZUFBYTtFQUNiLFlBQVc7RUFDWCxxRUFBK0c7RUFDL0csdUJBQXNCO0VBQ3RCLHlCQUF3QjtFQUN4QixtQkFBa0I7RUFDbEIsV0FBUztFQUNULGtCQUFpQjtFQUNqQixtQkFBa0I7RUFDbEIsaUJBQWdCO0VBQ2hCLFdBQVUsRUFDakI7O0FBRUQ7RUFDSSxtQkFBaUI7RUFDakIsYUFBVztFQUNYLGNBQVk7RUFDWixhQUFXO0VBQ1gsV0FBUztFQUNULFVBQVE7RUFDUixvQkFBa0I7RUFDbEIseUJBQXdCO0VBQ3hCLGdCQUFlO0VBRWYsY0FBYSxFQUNoQjs7QUFFRDtFQUNJLG1CQUFrQjtFQUNsQixnQkFBYztFQUNkLGtCQUFpQjtFQUNqQixnQkFBZTtFQUNmLFdBQVU7RUFDVixxQkFBb0IsRUFFdkIiLCJmaWxlIjoic3JjL2FwcC9yZWFkaW5nL2ktcmVhZGluZy9pLXJlYWRpbmctZGV0YWlsL2ktcmVhZGluZy1kZXRhaWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIkY29sb3ItcHJpbWFyeTogIzU1YzU3YTtcbiRjb2xvci1wcmltYXJ5LWxpZ2h0OiAjN2VkNTZmO1xuJGNvbG9yLXByaW1hcnktZGFyazogIzI4YjQ4NTtcbiRjb2xvci1ncmV5LWRhcms6IGJsYWNrO1xuXG4uaGVhZGVyX190aXRsZXtcbiAgICAgICAgZGlzcGxheTpibG9jaztcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byByaWdodCBib3R0b20sIHJnYmEoJGNvbG9yLXByaW1hcnktbGlnaHQsIDEpLCByZ2JhKCRjb2xvci1wcmltYXJ5LWRhcmssIDEpKTtcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogdG9wO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIHRvcDoyLjV2aDtcbiAgICAgICAgcGFkZGluZy10b3A6IDVyZW07XG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgICAgZm9udC1zaXplOiA0LjV2aDtcbiAgICAgICAgei1pbmRleDogMTsgICBcbn1cblxuLmhlYWRlcl9fYXVkaW97XG4gICAgcG9zaXRpb246YWJzb2x1dGU7XG4gICAgd2lkdGg6MzAwcHg7XG4gICAgaGVpZ2h0OjMwMHB4O1xuICAgIGJvdHRvbTo2MHB4O1xuICAgIHJpZ2h0OjI1JTtcbiAgICBsZWZ0OjUwJTtcbiAgICBtYXJnaW4tbGVmdDotMTUwcHg7XG4gICAgcG9zaXRpb246IC13ZWJraXQtc3RpY2t5O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICAvLyB0b3A6MTAuNXZoO1xuICAgIHotaW5kZXg6IDMwMDA7XG59IFxuXG4uYm9keXtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luLXRvcDo4dmg7XG4gICAgZm9udC1zaXplOiAxLjJyZW07XG4gICAgcGFkZGluZzogMS41cmVtO1xuICAgIHotaW5kZXg6IDE7XG4gICAgbWFyZ2luLWJvdHRvbTogMTByZW07XG4gICAgXG59XG5cblxuXG5cbiJdfQ== */"
+module.exports = ".header__title {\n  display: block;\n  width: 100%;\n  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);\n  background-size: cover;\n  background-position: top;\n  text-align: center;\n  top: 2.5vh;\n  padding-top: 5rem;\n  position: relative;\n  font-size: 4.5vh;\n  z-index: 1; }\n\n.header__audio {\n  position: absolute;\n  width: 300px;\n  height: 300px;\n  bottom: 60px;\n  right: 25%;\n  left: 50%;\n  margin-left: -150px;\n  position: -webkit-sticky;\n  position: fixed;\n  z-index: 3000; }\n\n.body {\n  position: absolute;\n  margin-top: 8vh;\n  font-size: 1.2rem;\n  padding: 1.5rem;\n  z-index: 1;\n  margin-bottom: 7rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLWRldGFpbC9pLXJlYWRpbmctZGV0YWlsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBO0VBQ1EsZUFBYTtFQUNiLFlBQVc7RUFDWCxxRUFBK0c7RUFDL0csdUJBQXNCO0VBQ3RCLHlCQUF3QjtFQUN4QixtQkFBa0I7RUFDbEIsV0FBUztFQUNULGtCQUFpQjtFQUNqQixtQkFBa0I7RUFDbEIsaUJBQWdCO0VBQ2hCLFdBQVUsRUFDakI7O0FBRUQ7RUFDSSxtQkFBaUI7RUFDakIsYUFBVztFQUNYLGNBQVk7RUFDWixhQUFXO0VBQ1gsV0FBUztFQUNULFVBQVE7RUFDUixvQkFBa0I7RUFDbEIseUJBQXdCO0VBQ3hCLGdCQUFlO0VBRWYsY0FBYSxFQUNoQjs7QUFFRDtFQUNJLG1CQUFrQjtFQUNsQixnQkFBYztFQUNkLGtCQUFpQjtFQUNqQixnQkFBZTtFQUNmLFdBQVU7RUFDVixvQkFBbUIsRUFFdEIiLCJmaWxlIjoic3JjL2FwcC9yZWFkaW5nL2ktcmVhZGluZy9pLXJlYWRpbmctZGV0YWlsL2ktcmVhZGluZy1kZXRhaWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIkY29sb3ItcHJpbWFyeTogIzU1YzU3YTtcbiRjb2xvci1wcmltYXJ5LWxpZ2h0OiAjN2VkNTZmO1xuJGNvbG9yLXByaW1hcnktZGFyazogIzI4YjQ4NTtcbiRjb2xvci1ncmV5LWRhcms6IGJsYWNrO1xuXG4uaGVhZGVyX190aXRsZXtcbiAgICAgICAgZGlzcGxheTpibG9jaztcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byByaWdodCBib3R0b20sIHJnYmEoJGNvbG9yLXByaW1hcnktbGlnaHQsIDEpLCByZ2JhKCRjb2xvci1wcmltYXJ5LWRhcmssIDEpKTtcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogdG9wO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIHRvcDoyLjV2aDtcbiAgICAgICAgcGFkZGluZy10b3A6IDVyZW07XG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgICAgZm9udC1zaXplOiA0LjV2aDtcbiAgICAgICAgei1pbmRleDogMTsgICBcbn1cblxuLmhlYWRlcl9fYXVkaW97XG4gICAgcG9zaXRpb246YWJzb2x1dGU7XG4gICAgd2lkdGg6MzAwcHg7XG4gICAgaGVpZ2h0OjMwMHB4O1xuICAgIGJvdHRvbTo2MHB4O1xuICAgIHJpZ2h0OjI1JTtcbiAgICBsZWZ0OjUwJTtcbiAgICBtYXJnaW4tbGVmdDotMTUwcHg7XG4gICAgcG9zaXRpb246IC13ZWJraXQtc3RpY2t5O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICAvLyB0b3A6MTAuNXZoO1xuICAgIHotaW5kZXg6IDMwMDA7XG59IFxuXG4uYm9keXtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luLXRvcDo4dmg7XG4gICAgZm9udC1zaXplOiAxLjJyZW07XG4gICAgcGFkZGluZzogMS41cmVtO1xuICAgIHotaW5kZXg6IDE7XG4gICAgbWFyZ2luLWJvdHRvbTogN3JlbTtcbiAgICBcbn1cblxuXG5cblxuXG4iXX0= */"
 
 /***/ }),
 
@@ -7107,6 +7178,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
 /* harmony import */ var _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../models/reading/lessons.model */ "./src/app/models/reading/lessons.model.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7119,9 +7191,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var IReadingDetailComponent = /** @class */ (function () {
-    function IReadingDetailComponent(readingservice) {
+    function IReadingDetailComponent(readingservice, route, router) {
+        var _this = this;
         this.readingservice = readingservice;
+        this.route = route;
+        this.router = router;
         this.page = {
             index: 0,
             size: 1,
@@ -7129,11 +7205,23 @@ var IReadingDetailComponent = /** @class */ (function () {
         };
         this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](null);
         this.reading_config = [{
-                name: "health", content: "assets/data/reading/health/health.json"
+                name: "health", content: "assets/data/reading/"
             }];
+        route.params.subscribe(function (params) {
+            _this.id = params['id'];
+            _this.category = params['lesson'];
+        });
     }
     IReadingDetailComponent.prototype.ngOnInit = function () {
-        ;
+        console.log(this.id);
+        console.log(this.category);
+        for (var _i = 0, _a = this.reading_config; _i < _a.length; _i++) {
+            var entry = _a[_i];
+            this.loadLesson(entry.content);
+        }
+    };
+    IReadingDetailComponent.prototype.ngOnChanges = function () {
+        //TODO: NEED TO DOUBLE CHECK SECURE FOR THIS.ID AND THIS.CATEGORY
         for (var _i = 0, _a = this.reading_config; _i < _a.length; _i++) {
             var entry = _a[_i];
             this.loadLesson(entry.content);
@@ -7141,26 +7229,31 @@ var IReadingDetailComponent = /** @class */ (function () {
     };
     IReadingDetailComponent.prototype.loadLesson = function (le) {
         var _this = this;
-        ;
-        this.readingservice.get(le).subscribe(function (res) {
-            ;
+        var index = 0;
+        var url = le + "/" + this.category + "/" + this.category + ".json";
+        this.readingservice.get(url).subscribe(function (res) {
             _this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](res);
+            _this.lesson = _this.lessons.lessons;
+            for (var _i = 0, _a = _this.lesson; _i < _a.length; _i++) {
+                var entry = _a[_i];
+                if (entry.id === parseInt(_this.id) && entry.id !== 0) {
+                    _this.page.index = entry.id;
+                }
+            }
             _this.page.num = _this.lessons.lessons.length;
-            _this.page.index = 0;
+            //this.page.index= 0;
             _this.page.size = 1;
+            _this.getlesson(_this.page.index);
         });
     };
-    Object.defineProperty(IReadingDetailComponent.prototype, "lesson", {
-        get: function () {
-            ;
-            return (this.lessons.lessons) ? this.lessons.lessons.slice(this.page.index, this.page.index + this.page.size) : [];
-        },
-        enumerable: true,
-        configurable: true
-    });
+    IReadingDetailComponent.prototype.getlesson = function (indexArr) {
+        this.lesson = (this.lessons.lessons) ? this.lessons.lessons.slice(indexArr, indexArr + this.page.size) : [];
+    };
     IReadingDetailComponent.prototype.goto = function (index) {
         if (index >= 0 && index < this.page.num) {
             this.page.index = index;
+            this.router.navigate(['/i-reading-detail/' + this.category + '/' + this.page.index], { relativeTo: this.route });
+            this.getlesson(this.page.index);
         }
     };
     IReadingDetailComponent = __decorate([
@@ -7169,9 +7262,98 @@ var IReadingDetailComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./i-reading-detail.component.html */ "./src/app/reading/i-reading/i-reading-detail/i-reading-detail.component.html"),
             styles: [__webpack_require__(/*! ./i-reading-detail.component.scss */ "./src/app/reading/i-reading/i-reading-detail/i-reading-detail.component.scss")]
         }),
-        __metadata("design:paramtypes", [_services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__["ReadingService"]])
+        __metadata("design:paramtypes", [_services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__["ReadingService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], IReadingDetailComponent);
     return IReadingDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.html":
+/*!********************************************************************************!*\
+  !*** ./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.html ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"center pt-15\">\n  <div *ngIf=\"loading === false\" class=\"container pb-4\">\n    <div class=\"row\">\n      <div class=\"col-4\">\n        <hr>\n      </div>\n      <div class=\"col-4 text-center\">\n          <h1>{{lessonCate}}</h1>\n        </div>\n        <div class=\"col-4\">\n            <hr>\n          </div>\n    </div>\n  </div>\n  <div  class=\"table-responsive \">\n      <img *ngIf=\"loading\" src=\"assets/images/Ripple.gif\" />\n      <table *ngIf=\"loading === false\" class=\"table\">\n        <thead class=\"primary-color-dark white-text\">\n          <tr>\n            <th>ID</th>\n            <th>Title</th>\n            <th>% Read</th>\n            <th>% Test</th>\n          </tr>\n        </thead>\n        \n        <tbody>\n          <tr mdbTableCol *ngFor=\"let lesson of lessonsArr\" class=\"title\" [routerLink]=\"['/i-reading-detail',lesson.category,lesson.id]\">\n            <th scope=\"row\">{{lesson.id}}</th>\n            <th >{{lesson.title}}</th>\n            <th>{{lesson.percentAssume}}%</th>\n            <th>{{lesson.percentActual}}%</th>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n</div>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.scss":
+/*!********************************************************************************!*\
+  !*** ./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.scss ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".pt-15 {\n  margin-top: 13vh; }\n\n.center {\n  padding: 3vh; }\n\nth {\n  font-size: 2.0vh; }\n\n.title:hover {\n  background-color: #4285F4;\n  color: white;\n  cursor: pointer; }\n\nh1 {\n  font-size: 4vh;\n  text-transform: uppercase;\n  font-weight: 700;\n  display: inline-block;\n  background-image: linear-gradient(to right, #7ed56f, #28b485);\n  -webkit-background-clip: text;\n  color: transparent;\n  letter-spacing: .2rem;\n  transition: all .2s; }\n\nhr {\n  margin-top: 1,5vh;\n  size: 30px; }\n\n/* Large devices (laptops/desktops, 992px and up) */\n\n@media only screen and (min-width: 1366px) {\n  .center {\n    padding: 3vh 32vh; } }\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n\n@media only screen and (min-width: 1200px) {\n  .center {\n    padding: 4vh 32vh; } }\n\nimg {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 50%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLW1lbnUvaS1yZWFkaW5nLW1lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRyxpQkFBZ0IsRUFDbEI7O0FBQ0Q7RUFDSSxhQUFXLEVBQ2Q7O0FBQ0Q7RUFDSSxpQkFBZ0IsRUFDbkI7O0FBRUQ7RUFFUSwwQkFBeUI7RUFDekIsYUFBWTtFQUNaLGdCQUFlLEVBQ2xCOztBQUVMO0VBQ0ksZUFBYztFQUNkLDBCQUF5QjtFQUN6QixpQkFBZ0I7RUFDaEIsc0JBQXFCO0VBQ3JCLDhEQUE2RDtFQUM3RCw4QkFBNkI7RUFDN0IsbUJBQWtCO0VBQ2xCLHNCQUFxQjtFQUNyQixvQkFBbUIsRUFDdEI7O0FBQ0Q7RUFDSSxrQkFBaUI7RUFDakIsV0FBUyxFQUNaOztBQUNELG9EQUFvRDs7QUFDcEQ7RUFDSTtJQUNJLGtCQUFpQixFQUNwQixFQUFBOztBQUdMLHFFQUFxRTs7QUFDckU7RUFDSTtJQUNJLGtCQUFpQixFQUNwQixFQUFBOztBQUdMO0VBQ0ksZUFBYztFQUNkLGtCQUFpQjtFQUNqQixtQkFBa0I7RUFDbEIsV0FBVSxFQUNiIiwiZmlsZSI6InNyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLW1lbnUvaS1yZWFkaW5nLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHQtMTV7XG4gICBtYXJnaW4tdG9wOiAxM3ZoO1xufVxuLmNlbnRlcntcbiAgICBwYWRkaW5nOjN2aDtcbn1cbnRoe1xuICAgIGZvbnQtc2l6ZTogMi4wdmg7XG59XG5cbi50aXRsZXtcbiAgICAmOmhvdmVye1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDI4NUY0O1xuICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9XG59XG5oMXtcbiAgICBmb250LXNpemU6IDR2aDtcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byByaWdodCwgIzdlZDU2ZiwgIzI4YjQ4NSk7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLWNsaXA6IHRleHQ7XG4gICAgY29sb3I6IHRyYW5zcGFyZW50O1xuICAgIGxldHRlci1zcGFjaW5nOiAuMnJlbTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xufVxuaHJ7XG4gICAgbWFyZ2luLXRvcDogMSw1dmg7XG4gICAgc2l6ZTozMHB4O1xufVxuLyogTGFyZ2UgZGV2aWNlcyAobGFwdG9wcy9kZXNrdG9wcywgOTkycHggYW5kIHVwKSAqL1xuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAxMzY2cHgpIHtcbiAgICAuY2VudGVye1xuICAgICAgICBwYWRkaW5nOiAzdmggMzJ2aDtcbiAgICB9XG59IFxuXG4vKiBFeHRyYSBsYXJnZSBkZXZpY2VzIChsYXJnZSBsYXB0b3BzIGFuZCBkZXNrdG9wcywgMTIwMHB4IGFuZCB1cCkgKi9cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTIwMHB4KSB7XG4gICAgLmNlbnRlcntcbiAgICAgICAgcGFkZGluZzogNHZoIDMydmg7XG4gICAgfVxufVxuXG5pbWcge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICAgIG1hcmdpbi1yaWdodDogYXV0bztcbiAgICB3aWR0aDogNTAlO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.ts":
+/*!******************************************************************************!*\
+  !*** ./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.ts ***!
+  \******************************************************************************/
+/*! exports provided: IReadingMenuComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IReadingMenuComponent", function() { return IReadingMenuComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var IReadingMenuComponent = /** @class */ (function () {
+    function IReadingMenuComponent(readingservice, route) {
+        var _this = this;
+        this.readingservice = readingservice;
+        this.route = route;
+        this.reading_config = [{
+                name: "health", content: "assets/data/reading/"
+            }];
+        route.params.subscribe(function (params) { _this.id = params['id']; });
+    }
+    IReadingMenuComponent.prototype.ngOnInit = function () {
+        this.loadLesson(this.id);
+    };
+    IReadingMenuComponent.prototype.loadLesson = function (para) {
+        var _this = this;
+        this.loading = true;
+        this.readingservice.getMenu(para).subscribe(function (res) {
+            if (res.length !== 0) {
+                _this.loading = false;
+                _this.lessonCate = res[0].category;
+                _this.lessonsArr = res;
+            }
+        });
+    };
+    IReadingMenuComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-i-reading-menu',
+            template: __webpack_require__(/*! ./i-reading-menu.component.html */ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.html"),
+            styles: [__webpack_require__(/*! ./i-reading-menu.component.scss */ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__["ReadingService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
+    ], IReadingMenuComponent);
+    return IReadingMenuComponent;
 }());
 
 
@@ -7185,7 +7367,7 @@ var IReadingDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container pt-6\">\n    <div class=\"row\">\n      <div class=\"col-4\"><hr size=\"90\"></div>\n      <div class=\"col-4\"><h4 class=\"text-center text-info\">Categories</h4></div>\n      <div class=\"col-4\"><hr size=\"90\"></div>\n    </div>\n    <div class=\"row pt-4\">\n      <div class=\"col-md-12 pb-4\">\n        <div class=\"row\">\n          <div class=\"col-4\">\n            <a routerLink=\"/i-reading-detail\">\n              <img src=\"../../../assets/images/reading/i-reading/health.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <h6 class=\"text-center text-info pt-3\">Health</h6>\n            </a>           \n\n          </div>\n          <div class=\"col-4\">                       \n            <img src=\"../../../assets/images/reading/i-reading/animals.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n            <h6 class=\"text-center text-info pt-3\">Animals</h6>  \n          </div>\n          <div class=\"col-4\">          \n            <img src=\"../../../assets/images/reading/i-reading/america.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n            <h6 class=\"text-center text-info pt-3\">America</h6>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-12  pb-4 \">\n        <div class=\"row\">\n          <div class=\"col-4\">\n            <img src=\"../../../assets/images/reading/i-reading/history.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n            <h6 class=\"text-center text-info pt-3\">History</h6>\n          </div>\n          <div class=\"col-4\">\n              <img src=\"../../../assets/images/reading/i-reading/people.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <h6 class=\"text-center text-info pt-3\">People</h6>\n          </div>\n          <div class=\"col-4\">\n              <img src=\"../../../assets/images/reading/i-reading/place.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <h6 class=\"text-center text-info pt-3\">Place</h6>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-12 4 pb-5\">\n        <div class=\"row\">\n          <div class=\"col-4\">\n              <img src=\"../../../assets/images/reading/i-reading/sport.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <h6 class=\"text-center text-info pt-3\">Sport</h6>\n          </div>\n          <div class=\"col-4\">\n              <img src=\"../../../assets/images/reading/i-reading/studying.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <h6 class=\"text-center text-info pt-3\">Studying</h6>\n          </div>\n          <div class=\"col-4\">\n              <img src=\"../../../assets/images/reading/i-reading/music.jpeg\" alt=\"categories\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <h6 class=\"text-center text-info pt-3\">Music</h6>\n          </div>\n        </div>\n      </div>\n    </div>\n</div>\n"
+module.exports = "<div class=\"container pt-6\">\n    <div class=\"row\">\n      <div class=\"col-4\"><hr size=\"90\"></div>\n      <div class=\"col-4\"><h4 class=\"text-center text-info\">{{categories.title}}</h4></div>\n      <div class=\"col-4\"><hr size=\"90\"></div>\n    </div>\n    <div class=\"row pt-4\">\n      <div class=\"col-4 pb-4\" *ngFor=\"let cate of categoriesArr\">\n        <div class=\"thumbnail\">\n          <div [routerLink]=\"['/i-reading-menu',cate.id]\">\n              <img src=\"{{cate.src_img}}\" alt=\"\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <div class=\"caption\">\n                <h3>\n                    <h6 class=\"text-center text-info pt-3\">{{cate.title}}</h6>\n                </h3>\n              </div>\n          </div>\n        </div>\n      </div>\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -7211,6 +7393,8 @@ module.exports = ".pt-6 {\n  padding-top: 20vh; }\n\n/*# sourceMappingURL=data:a
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IReadingComponent", function() { return IReadingComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
+/* harmony import */ var _models_reading_i_reading_categories_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../models/reading/i-reading/categories.model */ "./src/app/models/reading/i-reading/categories.model.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7221,10 +7405,28 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var IReadingComponent = /** @class */ (function () {
-    function IReadingComponent() {
+    function IReadingComponent(readingservice) {
+        this.readingservice = readingservice;
+        this.categories = new _models_reading_i_reading_categories_model__WEBPACK_IMPORTED_MODULE_2__["categories"](null);
+        this.menu_config = [{
+                name: "i-reading-menu", content: "assets/data/reading/i-reading/menu.json"
+            }];
     }
     IReadingComponent.prototype.ngOnInit = function () {
+        for (var _i = 0, _a = this.menu_config; _i < _a.length; _i++) {
+            var entry = _a[_i];
+            this.loadMenu(entry.content);
+        }
+    };
+    IReadingComponent.prototype.loadMenu = function (entry) {
+        var _this = this;
+        this.readingservice.get(entry).subscribe(function (res) {
+            _this.categories = new _models_reading_i_reading_categories_model__WEBPACK_IMPORTED_MODULE_2__["categories"](res);
+            _this.categoriesArr = _this.categories.content;
+        });
     };
     IReadingComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -7232,7 +7434,7 @@ var IReadingComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./i-reading.component.html */ "./src/app/reading/i-reading/i-reading.component.html"),
             styles: [__webpack_require__(/*! ./i-reading.component.scss */ "./src/app/reading/i-reading/i-reading.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__["ReadingService"]])
     ], IReadingComponent);
     return IReadingComponent;
 }());
@@ -7518,6 +7720,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReadingService", function() { return ReadingService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7529,13 +7732,25 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var ReadingService = /** @class */ (function () {
     function ReadingService(http) {
         this.http = http;
     }
     ReadingService.prototype.get = function (url) {
-        ;
         return this.http.get(url);
+    };
+    ReadingService.prototype.getMenu = function (cate) {
+        return this.http.post('https://pure-tor-72835.herokuapp.com/menu/category', {
+            category: cate
+        }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) {
+            if (result.status === 'not found') {
+                return [];
+            }
+            else if (result.status === 'ok') {
+                return result.response;
+            }
+        }));
     };
     ReadingService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({

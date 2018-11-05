@@ -10,7 +10,7 @@ th{
 
 .title{
     &:hover{
-        background-color: #484848;
+        background-color: #4285F4;
         color: white;
         cursor: pointer;
     }
@@ -42,4 +42,11 @@ hr{
     .center{
         padding: 4vh 32vh;
     }
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

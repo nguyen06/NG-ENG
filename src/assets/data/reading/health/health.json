@@ -1,6 +1,6 @@
 {
     "name": "elementary reading",
-    "title": "health",
+    "category": "health",
     "lessons": [
         {
             "healthId": 0,

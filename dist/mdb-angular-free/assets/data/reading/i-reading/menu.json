@@ -1,0 +1,50 @@
+{
+    "title": "Categories",
+    "content": [
+        {
+            "id":"health",
+            "src_img":"assets/images/reading/i-reading/health.jpeg",
+            "title": "Health"
+        },
+        {
+            "id":"animals",
+            "src_img":"assets/images/reading/i-reading/animals.jpeg",
+            "title": "Animals"
+        },
+        {
+            "id":"america",
+            "src_img":"assets/images/reading/i-reading/america.jpeg",
+            "title": "America"
+        },
+        {
+            "id":"history",
+            "src_img":"assets/images/reading/i-reading/history.jpeg",
+            "title": "History"
+        },
+        {
+            "id":"poeple",
+            "src_img":"assets/images/reading/i-reading/people.jpeg",
+            "title": "People"
+        },
+        {
+            "id":"place",
+            "src_img":"assets/images/reading/i-reading/place.jpeg",
+            "title": "Place"
+        },
+        {
+            "id":"sport",
+            "src_img":"assets/images/reading/i-reading/sport.jpeg",
+            "title": "Sport"
+        },
+        {
+            "id":"study",
+            "src_img":"assets/images/reading/i-reading/studying.jpeg",
+            "title": "Studying"
+        },
+        {
+            "id":"music",
+            "src_img":"assets/images/reading/i-reading/music.jpeg",
+            "title": "Music"
+        }
+    ]
+}
