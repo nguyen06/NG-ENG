@@ -15,14 +15,12 @@ export class ReadingService {
   }
 
   getMenu(cate: string){
-    debugger;
     return this.http.post<any>('https://pure-tor-72835.herokuapp.com/menu/category', {
       category: cate
     }).pipe(map(result => {
       if(result.status === 'not found'){
         return [];
       }else if(result.status === 'ok'){
-        debugger;
         let responseArr = [];
         for(let element of result.response){
           if(element.category === cate){

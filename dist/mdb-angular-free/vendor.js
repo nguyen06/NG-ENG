@@ -48435,7 +48435,7 @@ function assertComponentType(actual, msg) {
     }
 }
 function throwError(msg) {
-    debugger; // Left intentionally for better debugger experience.
+    ; // Left intentionally for better  experience.
     throw new Error("ASSERTION ERROR: " + msg);
 }
 

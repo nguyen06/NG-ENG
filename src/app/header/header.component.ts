@@ -9,13 +9,13 @@ export class HeaderComponent implements OnInit {
   a: {};
   login: boolean;
   logout: boolean;
-  constructor(private auth: authenticationService) { }
+  constructor(private auth: authenticationService) { 
+  }
 
   ngOnInit() {
-    debugger;
     if(localStorage.getItem('currentUser')){
       this.a = JSON.parse(localStorage.getItem('currentUser'));
-      if(this.a['status'] === "OK"){
+      if(this.a){
         this.login = true;
       }else{
         this.logout = true;

@@ -8,7 +8,8 @@ export class authenticationService {
   constructor(private http: HttpClient){}
 
   login(username: string, password: string){
-    return this.http.post<any>('https://pure-tor-72835.herokuapp.com/users/login', {
+    //return this.http.post<any>('https://pure-tor-72835.herokuapp.com/users/login', {
+      return this.http.post<any>('http://localhost:3000/users/login',{
       username: username,
       password: password
     }).pipe(map(user => {
@@ -16,7 +17,7 @@ export class authenticationService {
         return user;
       }
       else if(user && user.message.token){
-        localStorage.setItem('currentUser', JSON.stringify(user));
+        localStorage.setItem('currentUser', JSON.stringify(user.message.studentId));
       }
       return user;
       
