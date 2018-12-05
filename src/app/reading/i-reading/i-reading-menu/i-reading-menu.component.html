@@ -19,19 +19,17 @@
       <table *ngIf="loading === false" class="table">
         <thead class="primary-color-dark white-text">
           <tr>
-            <th>ID</th>
+            <th>#</th>
             <th>Title</th>
-            <th>% Read</th>
-            <th>% Test</th>
+            <th>Grade</th>
           </tr>
         </thead>
         
         <tbody>
-          <tr mdbTableCol *ngFor="let lesson of lessonsArr" class="title" [routerLink]="['/i-reading-detail',lesson.category,lesson.id]">
-            <th scope="row">{{lesson.id}}</th>
+          <tr mdbTableCol *ngFor="let lesson of lessonsArr" class="title" [routerLink]="['/i-reading-detail',lesson.categoryId,lesson.lessonId]">
+            <th>{{lesson.orderNum}}</th>
             <th >{{lesson.title}}</th>
-            <th>{{lesson.percentAssume}}%</th>
-            <th>{{lesson.percentActual}}%</th>
+            <th>{{lesson.grade}}</th>
           </tr>
         </tbody>
       </table>

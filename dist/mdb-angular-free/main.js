@@ -6637,7 +6637,6 @@ var HeaderComponent = /** @class */ (function () {
         this.auth = auth;
     }
     HeaderComponent.prototype.ngOnInit = function () {
-        debugger;
         if (localStorage.getItem('currentUser')) {
             this.a = JSON.parse(localStorage.getItem('currentUser'));
             if (this.a['status'] === "OK") {

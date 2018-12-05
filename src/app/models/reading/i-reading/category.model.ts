@@ -1,10 +1,12 @@
 export class category{
-    id: string;
+    levelId: string;
+    categoryId:string;
+    categoryName:string;
     src_img: string;
-    title: string;
     constructor(data: any){
-        this.id = data.id;
+        this.levelId = data.levelId;
+        this.categoryId = data.categoryId;
+        this.categoryName = data.categoryName;
         this.src_img = data.src_img;
-        this.title = data.title;
     }
 }

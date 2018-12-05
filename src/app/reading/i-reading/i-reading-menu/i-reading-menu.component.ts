@@ -17,6 +17,7 @@ export class IReadingMenuComponent implements OnInit {
   lessonCate: string;
   id: string;
   loading: boolean;
+  config = "assets/configure/config.json";
 
   reading_config = [{
     name: "health", content: "assets/data/reading/"
@@ -35,14 +36,29 @@ export class IReadingMenuComponent implements OnInit {
   }
 
   loadLesson(para: string){
-    debugger;
+    //get the studentID from localStorage
+    let studentId = JSON.parse(localStorage.getItem('currentUser'));
     this.loading = true;
-    this.readingservice.getMenu(para).subscribe(res => {
-      debugger;
+    let categoryName;
+    this.readingservice.getMenu(para, studentId).subscribe(res => {
       if(res.length !== 0){
-        this.loading = false;
-        this.lessonCate = res[0].category;
-        this.lessonsArr = res
+        this.readingservice.get(this.config).subscribe((response: any) => {
+          debugger;
+          let hardCodeArr = response.content;
+          let arrHardCode = [...hardCodeArr];
+  
+          for(let index = 0 ; index < arrHardCode.length ; index ++){
+            if(arrHardCode[index].categoryId === res[0].categoryId){
+              categoryName = arrHardCode[index].categoryName;
+            }
+          }
+          this.loading = false;
+          this.lessonCate = categoryName;
+          debugger;
+          this.lessonsArr = res
+          
+        })
+
       }
     
     });

@@ -1,0 +1,13 @@
+{
+    "name": "configues",
+    "content": [
+        {
+            "categoryId": "9625",
+            "categoryName": "Health"
+        },
+        {
+            "categoryId": "9877",
+            "categoryName": "Animal"
+        }
+    ]
+}

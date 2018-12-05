@@ -11,6 +11,8 @@ import { category } from '../../models/reading/i-reading/category.model';
 export class IReadingComponent implements OnInit {
 
   categoriesArr: category[];
+  title:String;
+  loading: Boolean;
   categories: categories = new categories(null);
   menu_config = [{
     name:"i-reading-menu" , content:"assets/data/reading/i-reading/menu.json"
@@ -23,9 +25,13 @@ export class IReadingComponent implements OnInit {
     }
   }
   loadMenu(entry: string){
-    this.readingservice.get(entry).subscribe(res => {
-      this.categories = new categories(res); 
-      this.categoriesArr = this.categories.content;
+    let levelId = 'RI';
+    this.loading= true;
+    this.readingservice.getCategories(levelId).subscribe(res => {
+      this.loading = false;
+      this.categories = new categories(res);
+      this.title = 'Categories';
+      this.categoriesArr = this.categories.response;
 
     })
   }
