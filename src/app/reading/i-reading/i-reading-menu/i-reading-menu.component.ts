@@ -43,7 +43,7 @@ export class IReadingMenuComponent implements OnInit {
     this.readingservice.getMenu(para, studentId).subscribe(res => {
       if(res.length !== 0){
         this.readingservice.get(this.config).subscribe((response: any) => {
-          debugger;
+          
           let hardCodeArr = response.content;
           let arrHardCode = [...hardCodeArr];
   
@@ -54,7 +54,7 @@ export class IReadingMenuComponent implements OnInit {
           }
           this.loading = false;
           this.lessonCate = categoryName;
-          debugger;
+          
           this.lessonsArr = res
           
         })

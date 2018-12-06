@@ -1,24 +1,22 @@
 <div class="main">
     <app-header></app-header>
-      <div *ngFor="let question of lesson;">
+    <div>
         <audio controls class="header__audio">
             <source src="#" type="audio/ogg">
-            <source src={{question.audio}} type="audio/mpeg">
+            <source src={{lessonAudio}} type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <div class="header__title">
-                {{question.title}}
-                <div>
-                    <button class="btn btn-primary btn-sm">
-                        Reading {{page.index}} of {{page.num-1}}
-                    </button>
-                </div>
-
+    <div class="header__title">
+        {{oneLesson.title}}
+        <div>
+            <button class="btn btn-primary btn-sm">
+                Reading {{page.index}} of {{page.num-1}}
+            </button>
         </div>
-          
-          <div class="body" [innerHTML] ="question.content" ></div>
-      </div>
-
+    </div>
+    <img class="loading" *ngIf="loading" src="assets/images/Ripple.gif" />
+        <div class="body" [innerHTML] ="oneLesson.content" ></div>    
+    </div>
 </div>
 <footer class="footer-copyright fixed-bottom ">
     <div class = "blue py-3 text-center text-white">

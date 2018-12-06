@@ -4,7 +4,7 @@ import { readingModel } from '../../../models/reading/reading.model';
 import { readingLessons } from '../../../models/reading/lessons.model';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { debug } from 'util';
-
+import {oneLesson} from '../../../models/reading/i-reading/lesson.model';
 @Component({
   selector: 'app-i-reading',
   templateUrl: './i-reading-detail.component.html',
@@ -24,6 +24,10 @@ export class IReadingDetailComponent implements OnInit, OnChanges {
   lessonContent: string;
   lesson: readingModel[];
   id: string;
+  oneLesson: oneLesson = new oneLesson(null);
+  loading: boolean;
+
+  //oneLesson: readingLesson;
 
   reading_config = [{
     name: "health", content: "assets/data/reading/"
@@ -42,12 +46,14 @@ export class IReadingDetailComponent implements OnInit, OnChanges {
      }
 
   ngOnInit() {
-    console.log(this.id);
+    let a = this.id.toString();
     console.log(this.category);
 
-    for(let entry of this.reading_config){
-        this.loadLesson(entry.content);
-    }
+    // for(let entry of this.reading_config){
+    //     this.loadLesson(entry.content);
+    // }
+    // console.log("type of a" + typeof(a));
+    this.getOneLesson(a);
   }
   ngOnChanges() {
 
@@ -56,6 +62,17 @@ export class IReadingDetailComponent implements OnInit, OnChanges {
         this.loadLesson(entry.content);
     }
   }
+
+  getOneLesson(lessonId: string){
+    this.loading = true;
+    this.readingservice.getLessonService(lessonId).subscribe(res => {
+      this.loading = false;
+      this.oneLesson = new oneLesson(res);
+      this.lessonAudio =this.oneLesson.audioUrl;
+      
+    })
+  }
+
   loadLesson(le: string){
     let index = 0;
     let url = le  + "/" + this.category  + "/"+ this.category+".json";
