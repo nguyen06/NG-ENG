@@ -1,21 +1,69 @@
-<div class="main">
+<div [className]="!reading ? 'main' : 'main1'">
     <app-header></app-header>
     <div>
         <audio controls class="header__audio">
             <source src="#" type="audio/ogg">
-            <source src={{lessonAudio}} type="audio/mpeg">
+            <source src={{oneLesson.audioUrl}} type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     <div class="header__title">
         {{oneLesson.title}}
         <div>
-            <button class="btn btn-primary btn-sm">
-                Reading {{page.index}} of {{page.num-1}}
+            <button *ngIf="!reading" class="btn btn-primary btn-sm" (click)="goRead()">
+                    READING
+            </button>
+            <button *ngIf="reading" class="btn btn-primary btn-sm" (click)="goPratice()">
+                PRACTICE
             </button>
         </div>
     </div>
-    <img class="loading" *ngIf="loading" src="assets/images/Ripple.gif" />
-        <div class="body" [innerHTML] ="oneLesson.content" ></div>    
+        <img class="loading" *ngIf="loading" src="assets/images/Ripple.gif" />
+        <div *ngIf="reading" class="body" [innerHTML] ="oneLesson.content" ></div> 
+        <div *ngIf="!reading" class="centered">
+            <div *ngFor="let question of questions">
+                <button class="btn blue-gradient btn-rounded btn-sm">
+                    Question {{page.index + 1}} of {{page.num}}
+                </button>
+                <div>
+                    <p class="lead font-weight-bold w-responsive left">
+                    {{page.index + 1 }}. <span>{{question.content}}</span> 
+                    </p>
+                </div>
+                <div *ngFor="let option of question.multipleChoices">
+                    <div class="input-group">
+                        <div class="input-group-prepend text-center">
+                            <div class="input-group-text">
+                                {{option.id}}
+                            </div>
+                        </div>
+                        <div class="form-control text-left">
+                            <!-- [ngStyle]="{'background-color': ansOptId === option.id ? correctColor : uncorrectColor}"
+                            > -->
+                            {{option.content}}
+                            <div *ngIf="!question.visited">
+                                <button type="button" (click)="getAnswer(oneLesson.lessonId,question.questionId,option.id)" class="btn primary-color-dark btn-rounded" mdbWavesEffect>
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+                <br>
+                <br>
+                <div *ngIf="question.visited">
+                    <div *ngIf="!question.correct">
+                        <div class="alert alert-danger" role="alert">
+                            <h2>WRONG </h2><p>Please read again</p>
+                        </div>
+                    </div>
+                    <div *ngIf="question.correct">
+                        <div class="alert alert-success" role="alert">
+                            <h2>Correct </h2><p>Congratulation your answer correct</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </div>
 </div>
 <footer class="footer-copyright fixed-bottom ">

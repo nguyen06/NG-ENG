@@ -17,7 +17,8 @@ export class authenticationService {
         return user;
       }
       else if(user && user.message.token){
-        localStorage.setItem('currentUser', JSON.stringify(user.message.studentId));
+        debugger;
+        localStorage.setItem('currentUser', user.message.studentId);
       }
       return user;
       

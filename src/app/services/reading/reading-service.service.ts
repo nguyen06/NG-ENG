@@ -38,6 +38,7 @@ export class ReadingService {
   }
 
   getLessonService(lessonId:string){
+    debugger;
     return this.http.post<any>('http://localhost:3000/lesson/getLesson',{
       lessonId
     }).pipe(map(result => {
@@ -45,7 +46,9 @@ export class ReadingService {
       return res;
     }))
   }
+
   getMenu(cate: string, studentId: String){
+    debugger;
     //return this.http.post<any>('https://pure-tor-72835.herokuapp.com/lessons/category', {
     return this.http.post<any>('http://localhost:3000/lessons/getLessons',{
       categoryId: cate,
@@ -80,5 +83,17 @@ export class ReadingService {
       return responseArr;
       
     }));
+  }
+
+  updateGrade(lessonId, grade){
+    let studentId = localStorage.getItem('currentUser');
+    return this.http.post<any>('http://localhost:3000/lessons/updateLesson',{
+      lessonsId: lessonId,
+      studentId: studentId,
+      grade:grade
+    }).pipe(map(result => {
+      return result.result;
+      
+    }))
   }
 }
