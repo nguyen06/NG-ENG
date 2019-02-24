@@ -1,3 +1,5 @@
+
+
 <div [className]="!reading ? 'main' : 'main1'">
     <app-header></app-header>
     <div>
@@ -16,9 +18,30 @@
                 PRACTICE
             </button>
         </div>
-    </div>
+    </div> 
         <img class="loading" *ngIf="loading" src="assets/images/Ripple.gif" />
-        <div *ngIf="reading" class="body" [innerHTML] ="oneLesson.content" ></div> 
+        <!-- test -->
+        <div class="container body">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4">
+                    <div style="display: block">
+                        <canvas baseChart
+                                [datasets]="barChartData"
+                                [labels]="barChartLabels"
+                                [options]="barChartOptions"
+                                [legend]="barChartLegend"
+                                [chartType]="barChartType">
+                        </canvas>
+                      </div>
+                    
+                </div> 
+                <div class="col-lg-8 col-sm-8" *ngIf="reading" [innerHTML] ="oneLesson.content" ></div> 
+        
+            </div>
+        </div>
+        
+        <!-- test -->
+        
         <div *ngIf="!reading" class="centered">
             <div *ngFor="let question of questions">
                 <button class="btn blue-gradient btn-rounded btn-sm">

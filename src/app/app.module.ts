@@ -6,6 +6,8 @@ import {
   Routes
 } from '@angular/router';
 
+import { ChartsModule } from 'ng2-charts';
+
 import { AppComponent } from './app.component';
 import { TenseService } from './services/tense.service';
 import { authenticationService} from './services/authentication.service';
@@ -64,7 +66,8 @@ import { IReadingMenuComponent } from './reading/i-reading/i-reading-menu/i-read
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    tenses
+    tenses,
+    ChartsModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue:'/'},
